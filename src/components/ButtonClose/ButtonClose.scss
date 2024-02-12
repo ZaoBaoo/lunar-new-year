@@ -1,0 +1,15 @@
+@import '../../styles/placeholders.scss';
+
+#root .buttonClose {
+  width: 37px;
+  height: 37px;
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/button-close.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @extend %click;
+
+  position: absolute;
+  top: 12px;
+  right: 13px;
+}

@@ -1,0 +1,61 @@
+#root .questComplete {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-bg-compled.png");
+  position: relative;
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%) scale(1.2);
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 303px;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-top: 5px;
+  }
+}

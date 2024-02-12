@@ -1,0 +1,67 @@
+#root .popupScene {
+  height: 100vh;
+  background: linear-gradient(90deg, #FF9032 0%, #FC5E39 100%);
+  padding: 16px 16px 0;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 62px 16px 0;
+    background-color: #FC5E39;
+    border: 1px solid #F4D070;
+    border-radius: 16px 16px 0 0;
+    position: relative;
+  }
+
+  &__close {
+    width: 37px;
+    height: 37px;
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/button-close.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    top: 12px;
+    right: 13px;
+  }
+
+  &__content {
+    height: 100%;
+    padding: 70px 26px 0;
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/popup-content-white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    color: #FC5E39;
+  }
+
+  &__image {
+    width: 160px;
+    height: 160px;
+    margin-top: 40px;
+
+    &_xm {
+      background-image: url("https://www.technodom.kz/under/lunar-new-year/bars-1.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__button {
+    margin-top: 55px;
+  }
+
+  &__loader {
+    margin-top: 80px;
+  }
+}

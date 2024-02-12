@@ -1,0 +1,22 @@
+#root .gamePreview {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__text {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  &_ava {
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-ava.png");
+  }
+}

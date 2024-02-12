@@ -1,0 +1,46 @@
+#root .brandsScene {
+  height: 100vh;
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-brands.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+    width: 75%;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    margin-top: 13px;
+  }
+
+  &__item {
+
+  }
+
+  &__leaderboard {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+    color: #FFFFFF;
+
+    margin-top: 17px;
+  }
+}
