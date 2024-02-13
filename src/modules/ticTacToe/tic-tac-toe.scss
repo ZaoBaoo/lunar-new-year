@@ -1,0 +1,66 @@
+.gameboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/tic-grid.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 2px left 5px;
+
+  margin-top: 24px;
+}
+
+.row {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row-02 {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.square {
+  aspect-ratio: 1;
+  text-align: center;
+  font-size: 11.4vw;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.square-01,
+.square-04,
+.square-07 {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+[data-side="ava"],
+[data-side="ai"] {
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: 73%;
+  background-position: center center;
+  animation: fadeIn 0.15s ease-in-out;
+}
+
+[data-side="ai"] {
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/tic-tac-toe-technodom.png");
+}
+
+[data-side="ava"] {
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/tic-tac-toe-ava.png");
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

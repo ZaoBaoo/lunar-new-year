@@ -1,4 +1,4 @@
-#root .quizSound {
+#root .quizQuestions {
   &__core {
     display: flex;
     flex-direction: column;
@@ -67,8 +67,6 @@
     letter-spacing: -0.28px;
   }
 
-
-
   &__answers {
     //margin-top: 16px;
     display: grid;
@@ -81,7 +79,7 @@
       gap: 8px;
       place-items: center;
 
-      .quizSound__icon {
+      .quizQuestions__icon {
         margin-bottom: 12px;
       }
     }
@@ -103,7 +101,7 @@
       justify-content: center;
       max-width: 144px;
 
-      .quizSound__wrapper {
+      .quizQuestions__wrapper {
         margin-top: 12px;
       }
     }
@@ -128,7 +126,7 @@
       margin: 0;
       opacity: 0;
 
-      &:checked + .quizSound__box {
+      &:checked + .quizQuestions__box {
         background-image: url("https://www.technodom.kz/under/lunar-new-year/answer-icon-check.svg");
       }
     }

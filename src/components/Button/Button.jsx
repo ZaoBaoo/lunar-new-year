@@ -10,7 +10,7 @@ const Button = ({ text, size, className = "", ...props }) => {
           button_large: size === "large",
           button_small: size === "small",
         },
-        className,
+        className
       )}
       {...props}
     >

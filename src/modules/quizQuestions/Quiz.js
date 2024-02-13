@@ -16,7 +16,7 @@ export default class Quiz {
     this.data = quizData; // вся информация
     this.quizCore = document.querySelector("#quiz-core");
     this.progressIndicator = document.querySelector(
-      ".quizSound__progress-indicator"
+      ".quizQuestions__progress-indicator"
     );
     this.questionContainer = document.querySelector("#quiz-question");
     this.answersContainer = document.querySelector("#quiz-answers");
@@ -71,7 +71,7 @@ export default class Quiz {
     if (this.userScore < this.data.length) {
       this.showRepeat();
       document
-        .querySelector(".quizSound__restart-btn")
+        .querySelector(".quizQuestions__restart-btn")
         .addEventListener("click", () => this.restart());
     } else {
       this.callbackFinal();
@@ -81,17 +81,17 @@ export default class Quiz {
   showRepeat() {
     // Добавить скрытие
     document
-      .querySelector(".quizSound__header")
-      .classList.add("quizSound__header_hidden");
+      .querySelector(".quizQuestions__header")
+      .classList.add("quizQuestions__header_hidden");
     document
-      .querySelector(".quizSound__footer")
-      .classList.add("quizSound__footer_hidden");
+      .querySelector(".quizQuestions__footer")
+      .classList.add("quizQuestions__footer_hidden");
     document
-      .querySelector(".quizSound__core")
-      .classList.add("quizSound__core_center");
+      .querySelector(".quizQuestions__core")
+      .classList.add("quizQuestions__core_center");
     document
-      .querySelector(".quizSound__final")
-      .classList.add("quizSound__final_show");
+      .querySelector(".quizQuestions__final")
+      .classList.add("quizQuestions__final_show");
     // document.querySelector('.quiz').classList.add('quiz_center');
 
     this.quizFinalContainer.innerHTML = new Final(this.data).render();
@@ -106,17 +106,17 @@ export default class Quiz {
     this.reset();
     this.quizFinalContainer.innerHTML = "";
     document
-      .querySelector(".quizSound__header")
-      .classList.remove("quizSound__header_hidden");
+      .querySelector(".quizQuestions__header")
+      .classList.remove("quizQuestions__header_hidden");
     document
-      .querySelector(".quizSound__footer")
-      .classList.remove("quizSound__footer_hidden");
+      .querySelector(".quizQuestions__footer")
+      .classList.remove("quizQuestions__footer_hidden");
     document
-      .querySelector(".quizSound__core")
-      .classList.remove("quizSound__core_center");
+      .querySelector(".quizQuestions__core")
+      .classList.remove("quizQuestions__core_center");
     document
-      .querySelector(".quizSound__final")
-      .classList.remove("quizSound__final_show");
+      .querySelector(".quizQuestions__final")
+      .classList.remove("quizQuestions__final_show");
     // document.querySelector('.quiz').classList.remove('quiz_center');
 
     this.renderQuestion();

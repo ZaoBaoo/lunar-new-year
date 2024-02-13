@@ -4,6 +4,8 @@ import { PopupScene } from "../components/SceneSwitcher/components/PopupScene/Po
 import { GamePreview } from "../components/SceneSwitcher/components/GamePreview/GamePreview";
 import { QuizSound } from "../components/SceneSwitcher/components/QuizSound/QuizSound";
 import { QuestComplete } from "../components/SceneSwitcher/components/QuestСomplete/QuestСomplete.jsx";
+import { TicTacToe } from "../components/SceneSwitcher/components/TicTacToe/TicTacToe.jsx";
+import { QuizQuestions } from "../components/SceneSwitcher/components/QuizQuestions/QuizQuestions.jsx";
 
 export const sceneComponents = {
   start: StartScene,
@@ -12,4 +14,6 @@ export const sceneComponents = {
   gamePreview: GamePreview,
   quizSound: QuizSound,
   questComplete: QuestComplete,
+  ticTacToe: TicTacToe,
+  quizQuestions: QuizQuestions,
 };

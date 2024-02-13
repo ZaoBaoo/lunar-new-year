@@ -1,0 +1,18 @@
+#root .ticTacToe {
+  &__description {
+    width: 100%;
+    aspect-ratio: 3.7 / 1;
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-table-78.png");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    margin-bottom: 40px;
+  }
+}
