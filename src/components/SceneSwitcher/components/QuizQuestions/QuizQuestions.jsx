@@ -3,12 +3,14 @@ import { useDispatch } from "react-redux";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
 import { useEffect } from "react";
 
-const QuizQuestions = ({ param }) => {
+const QuizQuestions = ({ activeBrand }) => {
   const dispatch = useDispatch();
 
   const questCompleted = () => {
     setTimeout(() => {
-      dispatch(setActiveSceneAction({ type: "questComplete", param: null }));
+      dispatch(
+        setActiveSceneAction({ type: "questComplete", activeBrand: null })
+      );
     }, 500);
   };
 

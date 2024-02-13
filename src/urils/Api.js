@@ -1,10 +1,9 @@
 class Api {
-  pushEventCompletedGame = (balance, idQuest) => {
+  pushEventCompletedGame = (idQuest) => {
     if (window.dataLayer) {
       window.dataLayer.push({
         event: "bf_21_quest_complete",
         quest_name: idQuest,
-        barsik_balance: balance,
       });
     } else {
       // eslint-disable-next-line
@@ -44,7 +43,7 @@ class Api {
         });
       } catch (e) {
         reject(
-          new Error("Что-то пошло не так при получении профиля пользователя"),
+          new Error("Что-то пошло не так при получении профиля пользователя")
         );
       }
     });

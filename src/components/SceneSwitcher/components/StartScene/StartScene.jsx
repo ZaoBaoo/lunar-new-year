@@ -3,12 +3,12 @@ import { useDispatch } from "react-redux";
 import { setActiveSceneAction } from "../../../../store/reducers/scene";
 import { Button } from "../../../Button/Button";
 
-const StartScene = ({ param }) => {
+const StartScene = () => {
   const dispatch = useDispatch();
 
   const handleNextScene = () => {
     setTimeout(() => {
-      dispatch(setActiveSceneAction({ type: "brands", param: null }));
+      dispatch(setActiveSceneAction({ type: "brands", activeBrand: null }));
     }, 500);
   };
 

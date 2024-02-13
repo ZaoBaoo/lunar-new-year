@@ -1,8 +1,56 @@
 import "./QuestСomplete.scss";
 import { Brand } from "../../../Brand/Brand.jsx";
 import { Button } from "../../../Button/Button.jsx";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { api } from "../../../../urils/Api.js";
+import {
+  handleCompleteAndInstallNextQuestAction,
+  setActiveQuestAction,
+  setActiveSceneAction,
+  setBrandsAction,
+} from "../../../../store/reducers/scene.js";
 
 const QuestComplete = () => {
+  const { brands, activeQuest, activeBrand } = useSelector(
+    (state) => state.scene
+  );
+
+  const dispatch = useDispatch();
+
+  const nextQuest = () => {
+    setTimeout(() => {
+      dispatch(dispatch(handleCompleteAndInstallNextQuestAction()));
+    }, 500);
+  };
+
+  // const handleCompleteAndInstallNextQuestAction = () => {
+  //   const { event } = activeQuest;
+  //
+  //   const targetBrand = JSON.parse(JSON.stringify(brands))[activeBrand];
+  //
+  //   let indexNextQuest;
+  //
+  //   targetBrand.quests.forEach((quest, index) => {
+  //     if (quest.event === event) {
+  //       quest.complete = true;
+  //       indexNextQuest = index + 1;
+  //     }
+  //   });
+  //
+  //   dispatch(setBrandsAction({ ...brands, [activeBrand]: targetBrand }));
+  //   dispatch(setActiveQuestAction(targetBrand.quests[indexNextQuest]));
+  //   dispatch(setActiveSceneAction({}));
+  // };
+
+  useEffect(() => {
+    if (activeQuest) {
+      console.log("ВЫПОЛНИЛ ПУШ");
+      const { event } = activeQuest;
+      api.pushEventCompletedGame(event);
+    }
+  }, [activeQuest]);
+
   return (
     <div className="questComplete">
       <div className="questComplete__wrapper">
@@ -16,7 +64,7 @@ const QuestComplete = () => {
           </p>
         </div>
         <div className="questComplete__bottom">
-          <Button size="large" onClick={() => {}} text="К следующему уровню" />
+          <Button size="large" onClick={nextQuest} text="К следующему уровню" />
         </div>
       </div>
       <img

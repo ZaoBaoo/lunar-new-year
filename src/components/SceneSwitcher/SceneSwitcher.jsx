@@ -3,15 +3,13 @@ import { useSelector } from "react-redux";
 import { sceneComponents } from "../../urils/sceneComponents";
 
 const SceneSwitcher = () => {
-  const { activeScene, param } = useSelector((state) => state.scene);
-
-  console.log(activeScene);
+  const { activeScene, activeBrand } = useSelector((state) => state.scene);
 
   const ActiveScene = sceneComponents[activeScene];
 
   return (
     <div className="sceneSwitcher">
-      <ActiveScene param={param} />
+      <ActiveScene activeBrand={activeBrand} />
     </div>
   );
 };

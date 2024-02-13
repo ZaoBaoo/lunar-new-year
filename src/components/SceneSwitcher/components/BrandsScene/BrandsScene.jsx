@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { ButtonBrand } from "./Components/ButtonBrand/ButtonBrand";
 import { brandsData } from "../../../../urils/brandsData";
 
-const BrandsScene = ({ params }) => {
+const BrandsScene = () => {
   const dispatch = useDispatch();
 
   const handleNextScene = (type) => {
@@ -13,11 +13,13 @@ const BrandsScene = ({ params }) => {
 
     if (brandStartDate < currentTime) {
       setTimeout(() => {
-        dispatch(setActiveSceneAction({ type: "gamePreview", param: type }));
+        dispatch(
+          setActiveSceneAction({ type: "gamePreview", activeBrand: type })
+        );
       }, 500);
     } else {
       setTimeout(() => {
-        dispatch(setActiveSceneAction({ type: "popup", param: type }));
+        dispatch(setActiveSceneAction({ type: "popup", activeBrand: type }));
       }, 500);
     }
   };

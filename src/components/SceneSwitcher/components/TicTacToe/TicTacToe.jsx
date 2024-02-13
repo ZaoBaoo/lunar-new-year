@@ -4,10 +4,25 @@ import { useEffect } from "react";
 import { runTicTacToe } from "../../../../modules/ticTacToe/runTicTacToe.js";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 import { Button } from "../../../Button/Button.jsx";
+import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
+import { useDispatch } from "react-redux";
 
-const TicTacToe = ({ param }) => {
+const TicTacToe = ({ activeBrand }) => {
+  const dispatch = useDispatch();
+
+  const questCompleted = () => {
+    setTimeout(() => {
+      dispatch(
+        setActiveSceneAction({
+          type: "questComplete",
+          activeBrand: activeBrand,
+        })
+      );
+    }, 500);
+  };
+
   useEffect(() => {
-    runTicTacToe("ava", () => console.log("WIN123"));
+    runTicTacToe("ava", questCompleted);
   }, []);
 
   return (

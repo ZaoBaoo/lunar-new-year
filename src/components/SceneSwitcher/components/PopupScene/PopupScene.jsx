@@ -10,21 +10,21 @@ import { brandsData } from "../../../../urils/brandsData";
 import { Loader } from "../../../Loader/Loader";
 import { parseDate } from "../../../../urils/parseDate";
 
-const PopupScene = ({ param }) => {
+const PopupScene = ({ activeBrand }) => {
   const [currentBrandData, setCurrentBrandData] = useState(null);
   const dispatch = useDispatch();
 
   const handleNextScene = () => {
     setTimeout(() => {
-      dispatch(setActiveSceneAction({ type: "brands", param: null }));
+      dispatch(setActiveSceneAction({ type: "brands", activeBrand: null }));
     }, 500);
   };
 
   useEffect(() => {
-    if (param) {
-      setCurrentBrandData(brandsData[param]);
+    if (activeBrand) {
+      setCurrentBrandData(brandsData[activeBrand]);
     }
-  }, [param]);
+  }, [activeBrand]);
 
   return (
     <div className="popupScene">

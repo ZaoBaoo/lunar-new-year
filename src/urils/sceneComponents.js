@@ -14,6 +14,6 @@ export const sceneComponents = {
   gamePreview: GamePreview,
   quizSound: QuizSound,
   questComplete: QuestComplete,
-  ticTacToe: TicTacToe,
   quizQuestions: QuizQuestions,
+  ticTacToe: TicTacToe,
 };

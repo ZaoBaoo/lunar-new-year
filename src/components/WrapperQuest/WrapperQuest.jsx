@@ -9,7 +9,7 @@ const WrapperQuest = ({ children, indexQuest, isButtonDisabled }) => {
 
   const handleClose = () => {
     setTimeout(() => {
-      dispatch(setActiveSceneAction({ type: "brands", param: null }));
+      dispatch(setActiveSceneAction({ type: "brands", activeBrand: null }));
     }, 500);
   };
 

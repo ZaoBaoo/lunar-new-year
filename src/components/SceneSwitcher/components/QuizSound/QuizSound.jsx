@@ -3,12 +3,17 @@ import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
 import { useDispatch } from "react-redux";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 
-const QuizSound = ({ param }) => {
+const QuizSound = ({ activeBrand }) => {
   const dispatch = useDispatch();
 
   const questCompleted = () => {
     setTimeout(() => {
-      dispatch(setActiveSceneAction({ type: "questComplete", param: null }));
+      dispatch(
+        setActiveSceneAction({
+          type: "questComplete",
+          activeBrand: activeBrand,
+        })
+      );
     }, 500);
   };
 
