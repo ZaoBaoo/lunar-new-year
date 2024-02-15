@@ -1,4 +1,5 @@
 import "./App.scss";
+import "../../styles/animate.scss";
 import { isMobileApp } from "../../urils/isMobileApp.js";
 
 // Components
