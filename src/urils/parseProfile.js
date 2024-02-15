@@ -22,6 +22,6 @@ export const parseProfile = (profileData) => {
   return {
     ...brandsData,
     ava: { ...brandsData.ava, quests: transformDateAva },
-    neo: { ...brandsData.ava, quests: transformDateNeo },
+    neo: { ...brandsData.neo, quests: transformDateNeo },
   };
 };

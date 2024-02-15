@@ -2,6 +2,7 @@ import "./CommercialQuest.scss";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
+import { useEffect } from "react";
 
 const CommercialQuest = ({ activeBrand }) => {
   const { brands, activeQuest } = useSelector((state) => state.scene);
@@ -18,6 +19,10 @@ const CommercialQuest = ({ activeBrand }) => {
       );
     }, 500);
   };
+
+  useEffect(() => {
+    console.log(brands["neo"]);
+  }, []);
 
   return (
     <div className="commercialQuest">
