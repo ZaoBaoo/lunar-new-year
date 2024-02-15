@@ -1,0 +1,33 @@
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes rotateReverse {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+
+@keyframes backForth {
+  0% {transform: translateX(0) translateY(0);}
+  25% {transform: translateX(-15%) translateY(-15%);}
+  50% {transform: translateX(0) translateY(0);}
+  75% {transform: translateX(15%) translateY(15%);}
+  100% {transform: translateX(0) translateY(0);}
+}
+
+@keyframes backForthReverse {
+  0% {transform: translateX(0) translateY(0);}
+  25% {transform: translateX(15%) translateY(15%);}
+  50% {transform: translateX(0) translateY(0);}
+  75% {transform: translateX(-15%) translateY(-15%);}
+  100% {transform: translateX(0) translateY(0);}
+}
+
+@keyframes scale {
+  0% {transform: scale(1);}
+  25% {transform: scale(1.5);}
+  50% {transform: scale(1);}
+  75% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
