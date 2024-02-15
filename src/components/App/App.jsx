@@ -1,5 +1,5 @@
 import "./App.scss";
-import { isMobile } from "../../urils/isMobile";
+import { isMobileApp } from "../../urils/isMobileApp.js";
 
 // Components
 import { ScreenResolutionWarning } from "../ScreenResolutionWarning/ScreenResolutionWarning";
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="app">
-      {isMobile() ? <SceneSwitcher /> : <ScreenResolutionWarning />}
+      {isMobileApp() ? <SceneSwitcher /> : <ScreenResolutionWarning />}
     </div>
   );
 }

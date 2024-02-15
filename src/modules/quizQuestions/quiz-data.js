@@ -3,54 +3,54 @@ export const quizData = [
     question: "Какой категории принадлежит эта техника?",
     answers: [
       {
-        value: "Мультиварка",
+        value: "Мультиварка AVA",
         icon: null,
       },
       {
-        value: "Водонагреватель",
+        value: "Водонагреватель AVA",
         icon: null,
       },
       {
-        value: "Соковыжималка",
+        value: "Соковыжималка AVA",
         icon: null,
       },
       {
-        value: "Ледогенератор",
+        value: "Ледогенератор AVA",
         icon: null,
       },
     ],
     img: "https://www.technodom.kz/under/lunar-new-year/ava-quest-1.png",
     audio: null,
-    correctAnswer: "Водонагреватель",
+    correctAnswer: "Водонагреватель AVA",
     hasAnsweredCorrectly: null,
   },
   {
     question: "А что это за техника скрывается тут?",
     answers: [
       {
-        value: "Ноутбук",
+        value: "Ноутбук AVA",
         icon: null,
       },
       {
-        value: "Духовка",
+        value: "Духовка AVA",
         icon: null,
       },
       {
-        value: "Электропечь",
+        value: "Электропечь AVA",
         icon: null,
       },
       {
-        value: "Микроволновка",
+        value: "Микроволновка AVA",
         icon: null,
       },
     ],
     img: "https://www.technodom.kz/under/lunar-new-year/ava-quest-2.png",
     audio: null,
-    correctAnswer: "Микроволновка",
+    correctAnswer: "Микроволновка AVA",
     hasAnsweredCorrectly: null,
   },
   {
-    question: "А что делает эта посуда?",
+    question: "А что делает эта техника AVA?",
     answers: [
       {
         value: "Делает йогурт",

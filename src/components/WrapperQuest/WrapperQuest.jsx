@@ -4,7 +4,12 @@ import { setActiveSceneAction } from "../../store/reducers/scene.js";
 import { useDispatch } from "react-redux";
 import { Button } from "../Button/Button.jsx";
 
-const WrapperQuest = ({ children, indexQuest, isButtonDisabled }) => {
+const WrapperQuest = ({
+  children,
+  indexQuest,
+  isButtonDisabled,
+  handleAction = Function.prototype,
+}) => {
   const dispatch = useDispatch();
 
   const handleClose = () => {
@@ -21,6 +26,7 @@ const WrapperQuest = ({ children, indexQuest, isButtonDisabled }) => {
         <div className="wrapperQuest__content">
           {children}
           <Button
+            onClick={handleAction}
             disabled={isButtonDisabled}
             size="small"
             text="Далее"

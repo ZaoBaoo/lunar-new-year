@@ -1,9 +1,7 @@
-import "./TicTacToe.scss";
-import "../../../../modules/ticTacToe/tic-tac-toe.scss";
-import { useEffect } from "react";
 import { runTicTacToe } from "../../../../modules/ticTacToe/runTicTacToe.js";
+import "./TicTacToe.scss";
+import { useEffect } from "react";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
-import { Button } from "../../../Button/Button.jsx";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
 import { useDispatch } from "react-redux";
 

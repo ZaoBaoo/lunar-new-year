@@ -1,5 +1,4 @@
 import { quizData } from "./quiz-data";
-import "./index.scss";
 
 // Classes
 import Answer from "./Answer.js";

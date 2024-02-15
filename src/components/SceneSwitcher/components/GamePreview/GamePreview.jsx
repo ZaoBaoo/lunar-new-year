@@ -2,6 +2,7 @@ import "./GamePreview.scss";
 import { clsx } from "clsx";
 import { Button } from "../../../Button/Button";
 import {
+  setActivePopupAction,
   setActiveQuestAction,
   setActiveSceneAction,
 } from "../../../../store/reducers/scene";
@@ -27,6 +28,22 @@ const GamePreview = ({ activeBrand }) => {
   useEffect(() => {
     if (activeBrand && brands) {
       const activeQuest = getActiveQuest(activeBrand, brands);
+
+      if (!activeQuest) {
+        console.log({
+          type: "popup",
+          popupParam: "brandComplete",
+          activeBrand: activeBrand,
+        });
+        dispatch(
+          setActivePopupAction({
+            type: "popup",
+            popupParam: "brandComplete",
+            activeBrand: activeBrand,
+          })
+        );
+        return;
+      }
 
       dispatch(setActiveQuestAction(activeQuest));
     }

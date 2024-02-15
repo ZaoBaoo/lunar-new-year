@@ -1,6 +1,5 @@
 export const getActiveQuest = (brandName, brands) => {
-  const targetBrand =
-    brands[brandName].quests.find((brand) => !brand.complete) || {};
+  const targetBrand = brands[brandName].quests.find((brand) => !brand.complete);
 
   return targetBrand;
 };

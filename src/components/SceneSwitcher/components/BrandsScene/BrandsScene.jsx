@@ -1,8 +1,12 @@
 import "./BrandsScene.scss";
-import { setActiveSceneAction } from "../../../../store/reducers/scene";
+import {
+  setActivePopupAction,
+  setActiveSceneAction,
+} from "../../../../store/reducers/scene";
 import { useDispatch } from "react-redux";
 import { ButtonBrand } from "./Components/ButtonBrand/ButtonBrand";
 import { brandsData } from "../../../../urils/brandsData";
+import { checkAuth } from "../../../../urils/checkAuth.js";
 
 const BrandsScene = () => {
   const dispatch = useDispatch();
@@ -10,6 +14,15 @@ const BrandsScene = () => {
   const handleNextScene = (type) => {
     const brandStartDate = Date.parse(brandsData[type].startDate);
     const currentTime = new Date().getTime();
+
+    if (!checkAuth()) {
+      if (window.signInHelper) {
+        window.signInHelper();
+        return;
+      } else {
+        return;
+      }
+    }
 
     if (brandStartDate < currentTime) {
       setTimeout(() => {
@@ -19,7 +32,13 @@ const BrandsScene = () => {
       }, 500);
     } else {
       setTimeout(() => {
-        dispatch(setActiveSceneAction({ type: "popup", activeBrand: type }));
+        dispatch(
+          setActivePopupAction({
+            type: "popup",
+            popupParam: "announcement",
+            activeBrand: type,
+          })
+        );
       }, 500);
     }
   };

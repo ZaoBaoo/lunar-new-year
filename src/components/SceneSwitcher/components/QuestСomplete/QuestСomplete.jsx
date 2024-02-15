@@ -10,27 +10,25 @@ import { Loader } from "../../../Loader/Loader.jsx";
 const QuestComplete = () => {
   const [currentQuest, setCurrentQuest] = useState(null);
   const { brands, activeQuest, activeBrand } = useSelector(
-    (state) => state.scene,
+    (state) => state.scene
   );
 
   const dispatch = useDispatch();
 
   const nextQuest = () => {
-    setTimeout(() => {
-      handleCompleteAndInstallNextQuest();
-    }, 500);
+    handleCompleteAndInstallNextQuest();
   };
 
   const handleCompleteAndInstallNextQuest = () => {
     const copyObjectBrands = JSON.parse(JSON.stringify(brands));
 
     const indexNextQuest = brands[activeBrand].quests.findIndex(
-      (brand) => brand.event === activeQuest.event,
+      (brand) => brand.event === activeQuest.event
     );
 
     copyObjectBrands[activeBrand].quests[indexNextQuest].complete = true;
     const nextQuest = JSON.parse(
-      JSON.stringify(copyObjectBrands[activeBrand].quests[indexNextQuest + 1]),
+      JSON.stringify(copyObjectBrands[activeBrand].quests[indexNextQuest + 1])
     );
     const nextScene = nextQuest.nameQuest;
 
@@ -39,7 +37,7 @@ const QuestComplete = () => {
         copyObjectBrands,
         nextQuest,
         nextScene,
-      }),
+      })
     );
   };
 

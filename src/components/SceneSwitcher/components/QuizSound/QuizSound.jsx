@@ -1,3 +1,5 @@
+import "../../../../modules/quizSound/index.scss";
+import Quiz from "../../../../modules/quizSound/Quiz.js";
 import { useEffect } from "react";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
 import { useDispatch } from "react-redux";
@@ -18,13 +20,11 @@ const QuizSound = ({ activeBrand }) => {
   };
 
   useEffect(() => {
-    import("../../../../modules/quizSound/Quiz").then(({ default: Quiz }) => {
-      const quiz = new Quiz({
-        type: "audio",
-        callbackFinal: questCompleted,
-      });
-      quiz.init();
+    const quiz = new Quiz({
+      type: "audio",
+      callbackFinal: questCompleted,
     });
+    quiz.init();
   }, []);
 
   return (

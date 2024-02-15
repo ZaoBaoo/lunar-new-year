@@ -1,4 +1,5 @@
 import $ from "jquery";
+import "./tic-tac-toe.scss";
 
 export const runTicTacToe = (brand, callback) => {
   let userOs = [brand, "ai"];

@@ -5,6 +5,7 @@ const initialState = {
   brands: {},
   activeBrand: "",
   activeQuest: "",
+  popupParam: "",
 };
 
 export const slice = createSlice({
@@ -13,6 +14,11 @@ export const slice = createSlice({
   reducers: {
     setActiveSceneAction: (state, { payload }) => {
       state.activeScene = payload.type;
+      state.activeBrand = payload.activeBrand;
+    },
+    setActivePopupAction: (state, { payload }) => {
+      state.activeScene = payload.type;
+      state.popupParam = payload.popupParam;
       state.activeBrand = payload.activeBrand;
     },
     setBrandsAction: (state, { payload }) => {
@@ -37,6 +43,7 @@ export const {
   setActiveSceneAction,
   setBrandsAction,
   setActiveQuestAction,
+  setActivePopupAction,
   handleCompleteAndInstallNextQuestAction,
 } = actions;
 

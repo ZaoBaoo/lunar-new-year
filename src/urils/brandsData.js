@@ -2,6 +2,8 @@ export const brandsData = {
   ava: {
     startDate: "February 12, 2024 10:00:00",
     slug: "ava",
+    linkProducts: "https://www.technodom.kz/cms/promo/ava-moonyear-test",
+    image: "https://www.technodom.kz/under/lunar-new-year/ava-prize-5.png",
     quests: [
       {
         id: 1,
@@ -45,7 +47,7 @@ export const brandsData = {
         },
         complete: false,
         image: "https://www.technodom.kz/under/lunar-new-year/ava-prize-4.png",
-        nameQuest: "",
+        nameQuest: "memoryGame",
       },
       {
         id: 5,
@@ -56,7 +58,7 @@ export const brandsData = {
         },
         complete: false,
         image: "https://www.technodom.kz/under/lunar-new-year/ava-prize-5.png",
-        nameQuest: "",
+        nameQuest: "commercialQuest",
       },
     ],
   },

@@ -1,6 +1,6 @@
 export const quizData = [
   {
-    question: "Постарайся определить, какая техника издает этот звук. ",
+    question: "Постарайся определить, какая техника AVA издает этот звук. ",
     answers: [
       {
         value: "Миксер",
@@ -45,7 +45,8 @@ export const quizData = [
       },
     ],
     img: null,
-    audio: "https://www.technodom.kz/under/lunar-new-year/sounds/lunar-perforator.mp3",
+    audio:
+      "https://www.technodom.kz/under/lunar-new-year/sounds/lunar-perforator.mp3",
     correctAnswer: "Перфоратор",
     hasAnsweredCorrectly: null,
   },
@@ -70,7 +71,8 @@ export const quizData = [
       },
     ],
     img: null,
-    audio: "https://www.technodom.kz/under/lunar-new-year/sounds/lunar-pech.mp3",
+    audio:
+      "https://www.technodom.kz/under/lunar-new-year/sounds/lunar-pech.mp3",
     correctAnswer: "Тепловентилятор",
     hasAnsweredCorrectly: null,
   },

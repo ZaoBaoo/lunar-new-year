@@ -1,0 +1,66 @@
+@import '../../../../styles/placeholders.scss';
+
+#root .commercialQuest {
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 35px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 65px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__image {
+    width: 150px;
+    height: 41px;
+    margin-top: 25px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 263px;
+
+    margin-top: 18px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__link,
+  &__button {
+    background: linear-gradient(180deg, #FFD451 0%, #FC6B3F 100%);
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.5;
+    box-shadow: 0 6px 13px 0 #6502024D;
+    width: 90%;
+    font-size: 12px;
+    padding: 11px 32px;
+    @extend %click;
+    text-align: center;
+    text-decoration: none;
+  }
+}

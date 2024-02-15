@@ -1,3 +1,5 @@
+import "../../../../modules/quizQuestions/index.scss";
+import Quiz from "../../../../modules/quizQuestions/Quiz.js";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 import { useDispatch } from "react-redux";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
@@ -9,21 +11,20 @@ const QuizQuestions = ({ activeBrand }) => {
   const questCompleted = () => {
     setTimeout(() => {
       dispatch(
-        setActiveSceneAction({ type: "questComplete", activeBrand: null })
+        setActiveSceneAction({
+          type: "questComplete",
+          activeBrand: activeBrand,
+        })
       );
     }, 500);
   };
 
   useEffect(() => {
-    import("../../../../modules/quizQuestions/Quiz.js").then(
-      ({ default: Quiz }) => {
-        const quiz = new Quiz({
-          type: "image",
-          callbackFinal: questCompleted,
-        });
-        quiz.init();
-      }
-    );
+    const quiz = new Quiz({
+      type: "image",
+      callbackFinal: questCompleted,
+    });
+    quiz.init();
   }, []);
   return (
     <div className="quizQuestions">
