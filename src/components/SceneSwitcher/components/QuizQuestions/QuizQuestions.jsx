@@ -1,11 +1,12 @@
 import "../../../../modules/quizQuestions/index.scss";
 import Quiz from "../../../../modules/quizQuestions/Quiz.js";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
 import { useEffect } from "react";
 
 const QuizQuestions = ({ activeBrand }) => {
+  const { activeQuest } = useSelector((state) => state.scene);
   const dispatch = useDispatch();
 
   const questCompleted = () => {
@@ -20,15 +21,18 @@ const QuizQuestions = ({ activeBrand }) => {
   };
 
   useEffect(() => {
-    const quiz = new Quiz({
-      type: "image",
-      callbackFinal: questCompleted,
-    });
-    quiz.init();
+    if (activeQuest) {
+      const quiz = new Quiz({
+        type: "image",
+        callbackFinal: questCompleted,
+        id: activeQuest?.event,
+      });
+      quiz.init();
+    }
   }, []);
   return (
     <div className="quizQuestions">
-      <WrapperQuest indexQuest={3} isButtonDisabled={true}>
+      <WrapperQuest indexQuest={activeQuest?.id} isButtonDisabled={true}>
         <section className="quizQuestions__core" id="quiz-core">
           <div className="quizQuestions__header">
             <div className="quizQuestions__question" id="quiz-question"></div>

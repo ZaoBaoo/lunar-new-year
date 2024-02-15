@@ -2,10 +2,11 @@ import "../../../../modules/quizSound/index.scss";
 import Quiz from "../../../../modules/quizSound/Quiz.js";
 import { useEffect } from "react";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 
 const QuizSound = ({ activeBrand }) => {
+  const { activeQuest } = useSelector((state) => state.scene);
   const dispatch = useDispatch();
 
   const questCompleted = () => {
@@ -28,7 +29,7 @@ const QuizSound = ({ activeBrand }) => {
   }, []);
 
   return (
-    <WrapperQuest indexQuest={1} isButtonDisabled={true}>
+    <WrapperQuest indexQuest={activeQuest?.id} isButtonDisabled={true}>
       <section className="quizSound__core" id="quiz-core">
         <div className="quizSound__header">
           <div className="quizSound__question" id="quiz-question"></div>

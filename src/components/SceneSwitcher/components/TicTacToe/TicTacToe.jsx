@@ -3,9 +3,10 @@ import "./TicTacToe.scss";
 import { useEffect } from "react";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const TicTacToe = ({ activeBrand }) => {
+  const { activeQuest } = useSelector((state) => state.scene);
   const dispatch = useDispatch();
 
   const questCompleted = () => {
@@ -20,11 +21,13 @@ const TicTacToe = ({ activeBrand }) => {
   };
 
   useEffect(() => {
-    runTicTacToe("ava", questCompleted);
+    if (activeBrand) {
+      runTicTacToe(activeBrand, questCompleted);
+    }
   }, []);
 
   return (
-    <WrapperQuest indexQuest={2}>
+    <WrapperQuest indexQuest={activeQuest?.id}>
       <div className="ticTacToe">
         <div className="ticTacToe__description">
           <span>Твой ход первый</span>
