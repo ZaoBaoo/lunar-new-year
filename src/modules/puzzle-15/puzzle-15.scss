@@ -1,0 +1,204 @@
+#root .puzzle {
+  border: 1px solid transparent;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  //height: 100vh;
+  margin: auto;
+  padding-bottom: 48px;
+
+  &__question {
+    padding: 16px 24px;
+    text-align: center;
+    margin: 16px auto;
+
+    width: 100%;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 17px rgba(0, 0, 0, 0.03);
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-table-78.png");
+    aspect-ratio: 3.78 / 1;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+
+    max-width: 248px;
+    text-align: center;
+    margin: 0 auto 0;
+    color: #FC6B3F;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    margin-top: 12px;
+  }
+
+  &__board-container {
+    background-color: #FFFFFF;
+  }
+
+  &__tile {
+    width: 20vmin;
+    height: 20vmin;
+    display: flex;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &_neo {
+      &[data-number-puzzle="1"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-1.png");
+      }
+
+      &[data-number-puzzle="2"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-2.png");
+      }
+
+      &[data-number-puzzle="3"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-3.png");
+      }
+
+      &[data-number-puzzle="4"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-4.png");
+      }
+
+      &[data-number-puzzle="5"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-5.png");
+      }
+
+      &[data-number-puzzle="6"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-6.png");
+      }
+
+      &[data-number-puzzle="7"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-7.png");
+      }
+
+      &[data-number-puzzle="8"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-8.png");
+      }
+
+      &[data-number-puzzle="9"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-9.png");
+      }
+
+      &[data-number-puzzle="10"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-10.png");
+      }
+
+      &[data-number-puzzle="11"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-11.png");
+      }
+
+      &[data-number-puzzle="12"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-12.png");
+      }
+
+      &[data-number-puzzle="13"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-13.png");
+      }
+
+      &[data-number-puzzle="14"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-14.png");
+      }
+
+      &[data-number-puzzle="15"] {
+        background-image: url("https://www.technodom.kz/under/lunar-new-year/neo-15.png");
+      }
+    }
+
+    &_empty {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      line-height: 0;
+      font-size: 0;
+      vertical-align: bottom;
+      background-image: none;
+    }
+  }
+
+  &__board {
+    border-collapse: collapse;
+    padding: 0 16px;
+  }
+
+  &__wrapper-win {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 24px;
+    padding-bottom: 32px;
+
+    &_hidden {
+      display: none;
+    }
+  }
+
+  &__text-win {
+    color: #FC6B3F;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.28px;
+  }
+
+  &__btn-win {
+    flex-shrink: 0;
+    padding: 20px 48px;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 16px;
+    background: linear-gradient(105deg, #FB5521 2.29%, #F89335 89.28%);
+    transition: opacity 0.25s ease-in-out;
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.4px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:disabled {
+      background-color: #F0F1F2;
+      cursor: not-allowed;
+      color: #8E979F;
+    }
+
+    @media (max-width: 700px) {
+      display: block;
+      width: 100%;
+      box-shadow: none;
+      padding: 12px 0;
+      font-size: 16px;
+      line-height: 120%;
+      border-radius: 12px;
+
+      margin-top: 12px;
+    }
+  }
+}

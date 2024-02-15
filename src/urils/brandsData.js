@@ -9,7 +9,7 @@ export const brandsData = {
         id: 1,
         event: "cn_ny_2024_ava_quest_1",
         endContent: {
-          title: "Ты всё ближе к цели! 1-ый уровень позади!",
+          title: "Ты всё ближе к цели! 1-й уровень позади!",
           text: "Ты участвуешь в розыгрыше 50 сертификатов номиналом 10 000 тенге",
         },
         complete: false,
@@ -20,7 +20,7 @@ export const brandsData = {
         id: 2,
         event: "cn_ny_2024_ava_quest_2",
         endContent: {
-          title: "2-ой уровень пройден!",
+          title: "2-й уровень пройден!",
           text: "Ты участвуешь в розыгрыше 20 сертификатов номиналом 50 000 тенге",
         },
         complete: false,
@@ -31,7 +31,7 @@ export const brandsData = {
         id: 3,
         event: "cn_ny_2024_ava_quest_3",
         endContent: {
-          title: "3-ий уровень пройден!",
+          title: "3-й уровень пройден!",
           text: "Ты участвуешь в розыгрыше 10 сертификатов номиналом 100 000 тенге",
         },
         complete: false,
@@ -42,7 +42,7 @@ export const brandsData = {
         id: 4,
         event: "cn_ny_2024_ava_quest_4",
         endContent: {
-          title: "4-ый уровень пройден! Ты все ближе к цели!",
+          title: "4-й уровень пройден! Ты все ближе к цели!",
           text: "Ты участвуешь в розыгрыше 5 сертификатов номиналом 200 000 тенге",
         },
         complete: false,
@@ -63,11 +63,74 @@ export const brandsData = {
     ],
   },
   neo: {
-    startDate: "February 16, 2024 10:00:00",
+    startDate: "February 15, 2024 10:00:00",
     slug: "neo",
+    linkProducts: "https://www.technodom.kz/cms/promo/neo-moonyear",
+    image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-5.png",
+    quests: [
+      {
+        id: 1,
+        event: "cn_ny_2024_neo_quest_1",
+        endContent: {
+          title: "Ты всё ближе к цели! 1-й уровень позади!",
+          text: "Ты участвуешь в розыгрыше 50 сертификатов номиналом 10 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-1.png",
+        nameQuest: "quizQuestions",
+      },
+      {
+        id: 2,
+        event: "cn_ny_2024_neo_quest_2",
+        endContent: {
+          title: "2-й уровень пройден!",
+          text: "Ты участвуешь в розыгрыше 20 сертификатов номиналом 50 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-2.png",
+        nameQuest: "ticTacToe",
+      },
+      {
+        id: 3,
+        event: "cn_ny_2024_neo_quest_3",
+        endContent: {
+          title: "3-й уровень пройден!",
+          text: "Ты участвуешь в розыгрыше 10 сертификатов номиналом 100 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-3.png",
+        nameQuest: "quizQuestionsGrid",
+      },
+      {
+        id: 4,
+        event: "cn_ny_2024_neo_quest_4",
+        endContent: {
+          title: "4-й уровень пройден! Ты все ближе к цели!",
+          text: "Ты участвуешь в розыгрыше 5 сертификатов номиналом 200 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-4.png",
+        nameQuest: "puzzle15",
+      },
+      {
+        id: 5,
+        event: "cn_ny_2024_neo_quest_5",
+        endContent: {
+          title: "Купи технику",
+          text: "от 15 000 тенге с 12.02.24 по 24.02.24 включительно и участвуй в розыгрыше 3 сертификатов на покупки бренда NEO на 500 000 тенге.",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-5.png",
+        nameQuest: "commercialQuest",
+      },
+    ],
+  },
+  philips: {
+    startDate: "February 16, 2024 10:00:00",
+    slug: "philips",
   },
   vivo: {
-    startDate: "February 18, 2024 10:00:00",
+    startDate: "February 19, 2024 10:00:00",
     slug: "vivo",
   },
   lg: {
@@ -75,11 +138,7 @@ export const brandsData = {
     slug: "lg",
   },
   hotpoint: {
-    startDate: "February 22, 2024 10:00:00",
+    startDate: "February 21, 2024 10:00:00",
     slug: "hotpoint",
-  },
-  philips: {
-    startDate: "February 24, 2024 10:00:00",
-    slug: "philips",
   },
 };

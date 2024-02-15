@@ -40,7 +40,8 @@
 }
 
 [data-side="ava"],
-[data-side="ai"] {
+[data-side="ai"],
+[data-side="neo"] {
   color: transparent;
   background-repeat: no-repeat;
   background-size: 73%;
@@ -54,6 +55,10 @@
 
 [data-side="ava"] {
   background-image: url("https://www.technodom.kz/under/lunar-new-year/tic-tac-toe-ava.png");
+}
+
+[data-side="neo"] {
+  background-image: url("https://www.technodom.kz/under/lunar-new-year/tic-tac-toe-neo.png");
 }
 
 @keyframes fadeIn {

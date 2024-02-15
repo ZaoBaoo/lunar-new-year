@@ -15,7 +15,7 @@ export default class Quiz {
     this.data = quizData[id]; // вся информация
     this.quizCore = document.querySelector("#quiz-core");
     this.progressIndicator = document.querySelector(
-      ".quizQuestions__progress-indicator"
+      ".quizQuestionsGrid__progress-indicator"
     );
     this.questionContainer = document.querySelector("#quiz-question");
     this.answersContainer = document.querySelector("#quiz-answers");
@@ -70,7 +70,7 @@ export default class Quiz {
     if (this.userScore < this.data.length) {
       this.showRepeat();
       document
-        .querySelector(".quizQuestions__restart-btn")
+        .querySelector(".quizQuestionsGrid__restart-btn")
         .addEventListener("click", () => this.restart());
     } else {
       this.callbackFinal();
@@ -80,17 +80,17 @@ export default class Quiz {
   showRepeat() {
     // Добавить скрытие
     document
-      .querySelector(".quizQuestions__header")
-      .classList.add("quizQuestions__header_hidden");
+      .querySelector(".quizQuestionsGrid__header")
+      .classList.add("quizQuestionsGrid__header_hidden");
     document
-      .querySelector(".quizQuestions__footer")
-      .classList.add("quizQuestions__footer_hidden");
+      .querySelector(".quizQuestionsGrid__footer")
+      .classList.add("quizQuestionsGrid__footer_hidden");
     document
-      .querySelector(".quizQuestions__core")
-      .classList.add("quizQuestions__core_center");
+      .querySelector(".quizQuestionsGrid__core")
+      .classList.add("quizQuestionsGrid__core_center");
     document
-      .querySelector(".quizQuestions__final")
-      .classList.add("quizQuestions__final_show");
+      .querySelector(".quizQuestionsGrid__final")
+      .classList.add("quizQuestionsGrid__final_show");
     // document.querySelector('.quiz').classList.add('quiz_center');
 
     this.quizFinalContainer.innerHTML = new Final(this.data).render();
@@ -105,17 +105,17 @@ export default class Quiz {
     this.reset();
     this.quizFinalContainer.innerHTML = "";
     document
-      .querySelector(".quizQuestions__header")
-      .classList.remove("quizQuestions__header_hidden");
+      .querySelector(".quizQuestionsGrid__header")
+      .classList.remove("quizQuestionsGrid__header_hidden");
     document
-      .querySelector(".quizQuestions__footer")
-      .classList.remove("quizQuestions__footer_hidden");
+      .querySelector(".quizQuestionsGrid__footer")
+      .classList.remove("quizQuestionsGrid__footer_hidden");
     document
-      .querySelector(".quizQuestions__core")
-      .classList.remove("quizQuestions__core_center");
+      .querySelector(".quizQuestionsGrid__core")
+      .classList.remove("quizQuestionsGrid__core_center");
     document
-      .querySelector(".quizQuestions__final")
-      .classList.remove("quizQuestions__final_show");
+      .querySelector(".quizQuestionsGrid__final")
+      .classList.remove("quizQuestionsGrid__final_show");
     // document.querySelector('.quiz').classList.remove('quiz_center');
 
     this.renderQuestion();

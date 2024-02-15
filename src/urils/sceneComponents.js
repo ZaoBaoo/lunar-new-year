@@ -8,7 +8,8 @@ import { TicTacToe } from "../components/SceneSwitcher/components/TicTacToe/TicT
 import { QuizQuestions } from "../components/SceneSwitcher/components/QuizQuestions/QuizQuestions.jsx";
 import { MemoryGame } from "../components/SceneSwitcher/components/MemoryGame/MemoryGame.jsx";
 import { CommercialQuest } from "../components/SceneSwitcher/components/CommercialQuest/CommercialQuest.jsx";
-import { BrandComplete } from "../components/SceneSwitcher/components/PopupScene/Components/BrandComplete/BrandComplete.jsx";
+import { QuizQuestionsGrid } from "../components/SceneSwitcher/components/QuizQuestionsGrid/QuizQuestionsGrid.jsx";
+import { Puzzle15 } from "../components/SceneSwitcher/components/Puzzle-15/Puzzle-15.jsx";
 
 export const sceneComponents = {
   start: StartScene,
@@ -21,4 +22,6 @@ export const sceneComponents = {
   ticTacToe: TicTacToe,
   memoryGame: MemoryGame,
   commercialQuest: CommercialQuest,
+  quizQuestionsGrid: QuizQuestionsGrid,
+  puzzle15: Puzzle15,
 };

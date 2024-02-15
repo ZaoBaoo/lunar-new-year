@@ -29,12 +29,8 @@ const GamePreview = ({ activeBrand }) => {
     if (activeBrand && brands) {
       const activeQuest = getActiveQuest(activeBrand, brands);
 
+      // Если квеста нет активного у бренда, вызвать попап авторизации
       if (!activeQuest) {
-        console.log({
-          type: "popup",
-          popupParam: "brandComplete",
-          activeBrand: activeBrand,
-        });
         dispatch(
           setActivePopupAction({
             type: "popup",
@@ -52,7 +48,8 @@ const GamePreview = ({ activeBrand }) => {
   return (
     <div className={clsx("gamePreview", `gamePreview_${activeBrand}`)}>
       <p className="gamePreview__text">
-        Добро пожаловать на уровень AVA. Нажми «Играть», чтобы начать игру.
+        Добро пожаловать на уровень {activeBrand?.toUpperCase()}. Нажми
+        «Играть», чтобы начать игру.
       </p>
       <Button size="large" text="Играть!" onClick={handleNextScene} />
     </div>

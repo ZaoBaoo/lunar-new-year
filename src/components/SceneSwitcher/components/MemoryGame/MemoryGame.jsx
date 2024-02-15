@@ -35,7 +35,7 @@ const MemoryGame = () => {
   return (
     <div className="memoryGame">
       <WrapperQuest
-        indexQuest={4}
+        indexQuest={activeQuest.id}
         isButtonDisabled={!isButtonDisabled}
         handleAction={questCompleted}
       >
