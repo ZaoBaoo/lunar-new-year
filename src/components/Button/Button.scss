@@ -2,13 +2,14 @@
 
 #root .button {
   margin-bottom: 30px;
-
   background: linear-gradient(180deg, #FFD451 0%, #FC6B3F 100%);
+  background-size: 400% 400%;
   border-radius: 12px;
   color: #ffffff;
   font-weight: 700;
   line-height: 1.5;
   box-shadow: 0 6px 13px 0 #6502024D;
+  animation: gradientPosY 5s linear infinite;
   //transition: transform 0.1s ease-in-out;
   //
   //&:active {
