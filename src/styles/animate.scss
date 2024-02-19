@@ -9,6 +9,14 @@
 }
 
 @keyframes backForth {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-15%);}
+  50% {transform: translateX(0);}
+  75% {transform: translateX(15%);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes backForthUpDown {
   0% {transform: translateX(0) translateY(0);}
   25% {transform: translateX(-15%) translateY(-15%);}
   50% {transform: translateX(0) translateY(0);}
@@ -17,6 +25,14 @@
 }
 
 @keyframes backForthReverse {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(15%);}
+  50% {transform: translateX(0);}
+  75% {transform: translateX(-15%);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes backForthReverseUpDown {
   0% {transform: translateX(0) translateY(0);}
   25% {transform: translateX(15%) translateY(15%);}
   50% {transform: translateX(0) translateY(0);}
@@ -25,9 +41,46 @@
 }
 
 @keyframes scale {
-  0% {transform: scale(1);}
-  25% {transform: scale(1.5);}
-  50% {transform: scale(1);}
-  75% {transform: scale(0.5);}
-  100% {transform: scale(1);}
+  0% {transform: scale(1) rotate(0deg);}
+  25% {transform: scale(1.2) rotate(90deg);}
+  50% {transform: scale(1) rotate(180deg);}
+  75% {transform: scale(0.8) rotate(270deg);}
+  100% {transform: scale(1) rotate(360deg);}
+}
+
+@keyframes scaleReverse {
+  0% {transform: scale(1) rotate(0deg);}
+  25% {transform: scale(0.8) rotate(-90deg);}
+  50% {transform: scale(1) rotate(-180deg);}
+  75% {transform: scale(1.2) rotate(-270deg);}
+  100% {transform: scale(1) rotate(-360deg);}
+}
+
+@keyframes gradientPosY {
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+
+@keyframes prizeAppear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

@@ -54,11 +54,12 @@
 
     &__main-circle {
       width: 96%;
-      margin: 30% auto 0;
+      margin: 25% auto 0;
       position: relative;
       z-index: 2;
       opacity: 0;
       transition: opacity 1.5s ease-in-out;
+      transition-delay: 0.5s;
 
       &:before {
         content: '';
@@ -107,7 +108,7 @@
         right: -18%;
         height: 18%;
         z-index: 3;
-        animation-name: backForthReverse;
+        animation-name: backForthReverseUpDown;
       }
 
       &.cl-2 {
@@ -115,13 +116,13 @@
         left: -39%;
         height: 30%;
         z-index: 3;
-        animation-name: backForth;
+        animation-name: backForthUpDown;
       }
     }
 
     &__petal {
       position: absolute;
-      animation: 20s linear infinite scale, 20s linear infinite var(--petal-animate, rotate);
+      animation: 20s linear infinite var(--petal-animate, scale);
       width: calc(17% * var(--petal-scale));
       opacity: 0.3;
       top: var(--petal-top, auto);
@@ -131,7 +132,7 @@
     }
   }
 
-  &.animate {
+  &.scene-animate {
     .brandsScene {
       &__list {
         .buttonBrand {

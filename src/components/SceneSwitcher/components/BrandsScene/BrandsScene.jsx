@@ -11,7 +11,7 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 
 const BrandsScene = () => {
   const dispatch = useDispatch();
-  const refList = useRef();
+  const refAnimateScene = useRef();
 
   const handleNextScene = (type) => {
     const brandStartDate = Date.parse(brandsData[type].startDate);
@@ -46,13 +46,13 @@ const BrandsScene = () => {
   };
 
   useLayoutEffect(() => {
-    refList.current?.classList.add("animate");
+      refAnimateScene.current?.classList.add("scene-animate");
   }, []);
 
   useEffect(() => {}, []);
 
   return (
-    <div className="brandsScene" ref={refList}>
+    <div className="brandsScene" ref={refAnimateScene}>
       <div className="brandsScene__animation">
         <div className="brandsScene__animation__main-circle">
           <div className="brandsScene__animation__main-circle-in">
@@ -107,7 +107,7 @@ const BrandsScene = () => {
             "--petal-scale": 1.9,
             "--petal-top": "50%",
             "--petal-right": "-15%",
-            "--petal-animate": "rotateReverse",
+            "--petal-animate": "scaleReverse",
           }}
         />
         <img
@@ -138,7 +138,7 @@ const BrandsScene = () => {
             "--petal-scale": 1.2,
             "--petal-bottom": "3%",
             "--petal-right": "10%",
-            "--petal-animate": "rotateReverse",
+            "--petal-animate": "scaleReverse",
           }}
         />
       </div>
