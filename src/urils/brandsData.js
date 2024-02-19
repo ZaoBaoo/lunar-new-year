@@ -194,7 +194,7 @@ export const brandsData = {
     ],
   },
   vivo: {
-    startDate: "February 19, 2024 10:00:00",
+    startDate: "February 19, 2024 20:00:00",
     slug: "vivo",
   },
   lg: {
