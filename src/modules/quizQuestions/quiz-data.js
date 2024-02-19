@@ -153,4 +153,83 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
   ],
+  cn_ny_2024_philips_quest_1: [
+    {
+      question: "Что производила компания Philips, когда только образовалась?",
+      answers: [
+        {
+          value: "Табак",
+          icon: null,
+        },
+        {
+          value: "Телевизор",
+          icon: null,
+        },
+        {
+          value: "Электрическая лампочка",
+          icon: null,
+        },
+        {
+          value: "Соковыжималка",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/philips-quest-1.png",
+      audio: null,
+      correctAnswer: "Электрическая лампочка",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question:
+        "Какая функция была добавлена в электрические зубные щётки Philips в 2009 году, повышая эффективность чистки зубов?",
+      answers: [
+        {
+          value: "Режим отбеливания",
+          icon: null,
+        },
+        {
+          value: "Датчик давления",
+          icon: null,
+        },
+        {
+          value: "Автоматическое отключение",
+          icon: null,
+        },
+        {
+          value: "Вибрационная массажная головка",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/philips-quest-2.png",
+      audio: null,
+      correctAnswer: "Датчик давления",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question:
+        "Какой инновационный продукт, предназначенный для приготовления здоровой пищи с использованием горячего воздуха, был представлен компанией Philips в 2008 году?",
+      answers: [
+        {
+          value: "Электрическая сковорода",
+          icon: null,
+        },
+        {
+          value: "Мультиварка",
+          icon: null,
+        },
+        {
+          value: "Аэрогриль",
+          icon: null,
+        },
+        {
+          value: "Соковыжималка",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/philips-quest-3.png",
+      audio: null,
+      correctAnswer: "Аэрогриль",
+      hasAnsweredCorrectly: null,
+    },
+  ],
 };

@@ -33,7 +33,7 @@ const CommercialQuest = ({ activeBrand }) => {
               {activeQuest?.endContent?.title}
             </h2>
             <img
-              className="commercialQuest__image"
+              className={`commercialQuest__image commercialQuest__image_${activeBrand}`}
               src={activeQuest?.image}
               alt=""
             />

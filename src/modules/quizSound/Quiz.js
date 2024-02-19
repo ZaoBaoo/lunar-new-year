@@ -7,12 +7,12 @@ import Final from "./Final.js";
 import { handleAudioInteraction } from "./handleAudioInteraction";
 
 export default class Quiz {
-  constructor({ type, callbackFinal }) {
+  constructor({ type, callbackFinal, id }) {
     this.type = type;
     this.selectedAnswer = "";
     this.currentQuestion = 0; // текущий вопрос из массива
     this.userScore = 0; // очки пользователя
-    this.data = quizData; // вся информация
+    this.data = quizData[id]; // вся информация
     this.quizCore = document.querySelector("#quiz-core");
     this.progressIndicator = document.querySelector(
       ".quizSound__progress-indicator"

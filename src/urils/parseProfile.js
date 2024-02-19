@@ -19,9 +19,19 @@ export const parseProfile = (profileData) => {
     };
   });
 
+  const transformDatePhilips = brandsData.philips.quests.map((quest) => {
+    const isCompleted = profileData?.custom_properties[quest.event];
+
+    return {
+      ...quest,
+      complete: isCompleted ? true : false,
+    };
+  });
+
   return {
     ...brandsData,
     ava: { ...brandsData.ava, quests: transformDateAva },
     neo: { ...brandsData.neo, quests: transformDateNeo },
+    philips: { ...brandsData.philips, quests: transformDatePhilips },
   };
 };

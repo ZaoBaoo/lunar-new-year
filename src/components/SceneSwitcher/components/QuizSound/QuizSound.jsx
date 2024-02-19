@@ -21,11 +21,14 @@ const QuizSound = ({ activeBrand }) => {
   };
 
   useEffect(() => {
-    const quiz = new Quiz({
-      type: "audio",
-      callbackFinal: questCompleted,
-    });
-    quiz.init();
+    if (activeQuest) {
+      const quiz = new Quiz({
+        type: "audio",
+        callbackFinal: questCompleted,
+        id: activeQuest?.event,
+      });
+      quiz.init();
+    }
   }, []);
 
   return (

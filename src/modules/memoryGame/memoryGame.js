@@ -1,8 +1,6 @@
 export const memoryGame = (callbackShowFinal) => {
   const cards = document.querySelectorAll(".memory-card");
 
-  console.log("ИГРА С КАРТОЧКАМИ ЗАПУСТИЛАСЬ");
-
   let hasFlippedCard = false;
   let lockBoard = false;
   let firstCard, secondCard;
@@ -20,11 +18,8 @@ export const memoryGame = (callbackShowFinal) => {
     if (!hasFlippedCard) {
       hasFlippedCard = true;
       firstCard = this;
-      console.log("1");
       return;
     }
-
-    console.log("2");
 
     secondCard = this;
     checkForMatch();
@@ -78,7 +73,6 @@ export const memoryGame = (callbackShowFinal) => {
     cards.forEach((card) => {
       let randomPos = Math.floor(Math.random() * 12);
       card.style.order = randomPos;
-      console.log("7");
     });
   })();
 

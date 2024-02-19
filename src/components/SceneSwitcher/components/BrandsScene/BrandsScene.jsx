@@ -147,7 +147,11 @@ const BrandsScene = () => {
         <div className="brandsScene__list">
           <ButtonBrand type="ava" handleNextScene={handleNextScene} isActive />
           <ButtonBrand type="neo" handleNextScene={handleNextScene} isActive />
-          <ButtonBrand type="philips" handleNextScene={handleNextScene} />
+          <ButtonBrand
+            type="philips"
+            handleNextScene={handleNextScene}
+            isActive
+          />
           <ButtonBrand type="vivo" handleNextScene={handleNextScene} />
           <ButtonBrand type="hotpoint" handleNextScene={handleNextScene} />
           <ButtonBrand type="lg" handleNextScene={handleNextScene} />
