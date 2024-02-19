@@ -4,6 +4,7 @@ export const brandsData = {
     slug: "ava",
     linkProducts: "https://www.technodom.kz/cms/promo/ava-moonyear-test",
     image: "https://www.technodom.kz/under/lunar-new-year/ava-prize-5.png",
+    imageBg: "https://www.technodom.kz/under/lunar-new-year/ava-bg.png",
     quests: [
       {
         id: 1,
@@ -67,6 +68,7 @@ export const brandsData = {
     slug: "neo",
     linkProducts: "https://www.technodom.kz/cms/promo/neo-moonyear",
     image: "https://www.technodom.kz/under/lunar-new-year/neo-prize-5.png",
+    imageBg: "https://www.technodom.kz/under/lunar-new-year/neo-bg.png",
     quests: [
       {
         id: 1,
@@ -130,6 +132,7 @@ export const brandsData = {
     slug: "philips",
     linkProducts: "https://www.technodom.kz/cms/promo/phillips-moonyear",
     image: "https://www.technodom.kz/under/lunar-new-year/philips-prize-5.png",
+    imageBg: "https://www.technodom.kz/under/lunar-new-year/philips-bg.png",
     quests: [
       {
         id: 1,
@@ -196,13 +199,16 @@ export const brandsData = {
   vivo: {
     startDate: "February 19, 2024 20:00:00",
     slug: "vivo",
+    imageBg: "https://www.technodom.kz/under/lunar-new-year/vivo-bg.png",
   },
   lg: {
     startDate: "February 20, 2024 10:00:00",
     slug: "lg",
+    imageBg: "https://www.technodom.kz/under/lunar-new-year/lg-bg.png",
   },
   hotpoint: {
     startDate: "February 21, 2024 10:00:00",
     slug: "hotpoint",
+    imageBg: "https://www.technodom.kz/under/lunar-new-year/hotpoint-bg.png",
   },
 };
