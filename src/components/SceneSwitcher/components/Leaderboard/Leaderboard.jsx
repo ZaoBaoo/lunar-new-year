@@ -2,7 +2,7 @@ import "./Leaderboard.scss";
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 import { leaderboardDataList } from "../../../../urils/leaderboardDataList.js";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { mergeObjectLeaderboard } from "../../../../urils/mergeObjectLeaderboard.js";
 import { BrandBoard } from "./components/BrandBoard/BrandBoard.jsx";
 // Import Swiper React components
@@ -14,10 +14,19 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper/modules";
+import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
 
 const Leaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState(null);
   const { brands } = useSelector((state) => state.scene);
+
+  const dispatch = useDispatch();
+
+  const handleClose = () => {
+    setTimeout(() => {
+      dispatch(setActiveSceneAction({ type: "brands", activeBrand: null }));
+    }, 500);
+  };
 
   useEffect(() => {
     if (brands && leaderboardDataList) {
@@ -31,7 +40,7 @@ const Leaderboard = () => {
     <div className="leaderboard">
       <WrapperQuest
         buttonText="К выбору брендов"
-        handleAction={() => {}}
+        handleAction={handleClose}
         bg="leaderboard"
         className="leaderboard__wrapper"
       >
@@ -53,22 +62,6 @@ const Leaderboard = () => {
                   />
                 </SwiperSlide>
               ))}
-            {/*{leaderboardData && (*/}
-            {/*  <>*/}
-            {/*    <SwiperSlide>*/}
-            {/*      <BrandBoard*/}
-            {/*        boardData={leaderboardData["ava"]}*/}
-            {/*        brandName="ava"*/}
-            {/*      />*/}
-            {/*    </SwiperSlide>*/}
-            {/*    <SwiperSlide>*/}
-            {/*      <BrandBoard*/}
-            {/*        boardData={leaderboardData["neo"]}*/}
-            {/*        brandName="neo"*/}
-            {/*      />*/}
-            {/*    </SwiperSlide>*/}
-            {/*  </>*/}
-            {/*)}*/}
           </Swiper>
         </div>
       </WrapperQuest>

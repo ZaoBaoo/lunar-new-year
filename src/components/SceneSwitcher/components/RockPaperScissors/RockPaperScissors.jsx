@@ -4,10 +4,11 @@ import { rockPaperScissors } from "../../../../modules/rockPaperScissors/rockPap
 import { WrapperQuest } from "../../../WrapperQuest/WrapperQuest.jsx";
 import { useEffect, useState } from "react";
 import { setActiveSceneAction } from "../../../../store/reducers/scene.js";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const RockPaperScissors = ({ activeBrand }) => {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  const { activeQuest } = useSelector((state) => state.scene);
 
   const dispatch = useDispatch();
 
@@ -35,12 +36,13 @@ const RockPaperScissors = ({ activeBrand }) => {
       <WrapperQuest
         isButtonDisabled={isButtonDisabled}
         handleAction={questCompleted}
-        indexQuest={2}
+        indexQuest={activeQuest?.id}
+        bg={activeBrand}
       >
         <section className="knb">
           <div className="knb__question">
             <h3 className="knb__title">
-              Победи дракона в игре камень, ножницы, бумага 3 раза.
+              Победи дракона в игре «Камень, ножницы, бумага» 3 раза.
             </h3>
           </div>
 

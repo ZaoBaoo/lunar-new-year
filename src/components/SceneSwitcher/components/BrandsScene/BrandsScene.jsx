@@ -63,7 +63,9 @@ const BrandsScene = () => {
   };
 
   useLayoutEffect(() => {
-    refAnimateScene.current?.classList.add("scene-animate");
+    setTimeout(() => {
+      refAnimateScene.current?.classList.add("scene-animate");
+    }, 0);
   }, []);
 
   useEffect(() => {}, []);
@@ -170,8 +172,8 @@ const BrandsScene = () => {
             isActive
           />
           <ButtonBrand type="vivo" handleNextScene={handleNextScene} isActive />
+          <ButtonBrand type="lg" handleNextScene={handleNextScene} isActive />
           <ButtonBrand type="hotpoint" handleNextScene={handleNextScene} />
-          <ButtonBrand type="lg" handleNextScene={handleNextScene} />
         </div>
         <button
           className="brandsScene__leaderboard"

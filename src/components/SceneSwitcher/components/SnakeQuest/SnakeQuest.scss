@@ -1,58 +1,88 @@
 #root .snakeQuest {
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__canvas-wrapper {
+    position: relative;
+  }
+
+  &__win-text {
+    color: #4caf50;
+    font-weight: 700;
+    font-size: 32px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+
+    &_show {
+      opacity: 1;
+    }
+  }
+
   canvas {
     display: block;
     width: 100%;
     height: auto;
-    margin: 0 auto;
-
+    //margin: 0 auto;
     margin-bottom: 6px;
   }
 
   .controllers {
     position: relative;
-
-    width: 167px;
-    height: 81px;
-
-    margin: 0 auto;
+    width: 180px;
+    height: 98px;
+    margin: 0 auto 80px;
   }
+
   .horizontal {
     position: absolute;
-
-    top: calc(50% - 37px / 2);
+    top: 50%;
     left: 0;
     right: 0;
-
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
 
   .horizontal img {
     display: block;
-    width: 37px;
-    height: 37px;
-
+    width: 80px;
+    height: 80px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 
   .vertical {
     position: absolute;
-
     top: 0;
     bottom: 0;
-    left: calc(50% - 37px / 2);
-
+    left: calc(50% - 70px / 2);
     display: flex;
     flex-direction: column;
+    gap: 16px;
   }
 
   .vertical img {
     display: block;
-    width: 37px;
-    height: 37px;
-
+    width: 80px;
+    height: 80px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 
+    &:active {
+      transform: scale(0.9);
+    }
   }
-
 }
