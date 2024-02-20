@@ -1,13 +1,15 @@
 #root .gamePreview {
+  position: relative;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(90deg, #FF9032 0%, #FC5E39 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 
   &__text {
+    position: relative;
+    z-index: 3;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.5;
@@ -17,16 +19,156 @@
     max-width: 90%;
   }
 
-  &_ava {
-    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-ava.png");
+  &__brand-bg {
+    position: absolute;
+    z-index: 1;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-size: 20%;
+    background-repeat: repeat;
+    background-position: left center;
+    opacity: 0.3;
+    transform: rotate(-25deg);
   }
 
-  &_neo {
-    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-neo.png");
+  &__wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
-  &_philips {
-    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-philips.png");
+  &__cloud {
+    position: absolute;
+    animation: 20s linear infinite;
+
+    &.cl-1 {
+      top: 10%;
+      right: -25%;
+      height: 20%;
+      z-index: 3;
+      animation-name: backForthReverseUpDown;
+    }
+
+    &.cl-2 {
+      bottom: 30%;
+      left: -25%;
+      height: 20%;
+      z-index: 3;
+      animation-name: backForthUpDown;
+    }
+  }
+
+  &__umbrella {
+    position: absolute;
+    animation: 20s linear infinite;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &.umbr-1 {
+      top: -11%;
+      left: -23%;
+      width: 68%;
+      z-index: 3;
+      animation-name: rotate;
+      filter: drop-shadow(-36px 36px 42px rgba(109, 1, 1, 0.4));
+    }
+
+    &.umbr-2 {
+      bottom: -9%;
+      right: -19%;
+      width: 42%;
+      z-index: 3;
+      animation-name: rotateReverse;
+      filter: drop-shadow(-24px 23px 26px rgba(109, 1, 1, 0.4));
+    }
+  }
+
+  &__content {
+    position: relative;
+    width: 96%;
+    margin: -35% auto 0;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    &-in {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &__circle-pattern {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+        animation: 13s linear infinite rotate;
+
+        &-shadow {
+          position: absolute;
+          z-index: 3;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 90%;
+          height: 90%;
+          margin: 5%;
+        }
+
+        &-bg {
+          position: relative;
+          display: block;
+          z-index: 1;
+          width: 90%;
+          height: 90%;
+          margin: 5%;
+          object-position: center;
+          object-fit: contain;
+          animation: 13s linear infinite rotateReverse;
+        }
+      }
+
+      &__brand {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &__image {
+          width: 50%;
+          height: 50%;
+          margin: 25%;
+          display: block;
+          object-position: center;
+          object-fit: contain;
+          transform-origin: center;
+          animation: swing 2s infinite ease-in-out;
+        }
+      }
+    }
   }
 
   &_vivo {

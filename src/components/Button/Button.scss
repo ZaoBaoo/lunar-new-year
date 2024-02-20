@@ -10,11 +10,8 @@
   line-height: 1.5;
   box-shadow: 0 6px 13px 0 #6502024D;
   animation: gradientPosY 5s linear infinite;
-  //transition: transform 0.1s ease-in-out;
-  //
-  //&:active {
-  //  transform: scale(0.95);
-  //}
+  position: relative;
+  z-index: 3;
 
   @extend %click;
 
