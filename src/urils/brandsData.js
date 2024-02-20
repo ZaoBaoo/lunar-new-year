@@ -194,8 +194,67 @@ export const brandsData = {
     ],
   },
   vivo: {
-    startDate: "February 19, 2024 20:00:00",
+    startDate: "February 19, 2024 10:00:00",
     slug: "vivo",
+    linkProducts: "https://www.technodom.kz/cms/promo/vivo-moonyear",
+    image: "https://www.technodom.kz/under/lunar-new-year/vivo-prize-5.png",
+    quests: [
+      {
+        id: 1,
+        event: "cn_ny_2024_vivo_quest_1",
+        endContent: {
+          title: "Ты всё ближе к цели! 1-й уровень позади!",
+          text: "Ты участвуешь в розыгрыше 50 сертификатов номиналом 20 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/vivo-prize-1.png",
+        nameQuest: "quizQuestions",
+      },
+      {
+        id: 2,
+        event: "cn_ny_2024_vivo_quest_2",
+        endContent: {
+          title: "2-й уровень пройден!",
+          text: "Ты участвуешь в розыгрыше 10 сертификатов номиналом 50 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/vivo-prize-2.png",
+        nameQuest: "rockPaperScissors",
+      },
+      {
+        id: 3,
+        event: "cn_ny_2024_vivo_quest_3",
+        endContent: {
+          title: "3-й уровень пройден!",
+          text: "Ты участвуешь в розыгрыше 10 сертификатов номиналом 100 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/vivo-prize-3.png",
+        nameQuest: "quizQuestionsGrid",
+      },
+      {
+        id: 4,
+        event: "cn_ny_2024_vivo_quest_4",
+        endContent: {
+          title: "4-й уровень пройден! Ты всё ближе к цели!",
+          text: "Ты участвуешь в розыгрыше 5 сертификатов номиналом 200 000 тенге",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/vivo-prize-4.png",
+        nameQuest: "puzzle15",
+      },
+      {
+        id: 5,
+        event: "cn_ny_2024_vivo_quest_5",
+        endContent: {
+          title: "Покупай технику",
+          text: "от 50 000 тенге с 12.02.24 по 24.02.24 включительно и участвуй в розыгрыше 5 сертификатов на покупки бренда VIVO на 300 000 тенге.",
+        },
+        complete: false,
+        image: "https://www.technodom.kz/under/lunar-new-year/vivo-prize-5.png",
+        nameQuest: "commercialQuest",
+      },
+    ],
   },
   lg: {
     startDate: "February 20, 2024 10:00:00",

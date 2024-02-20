@@ -10,6 +10,9 @@ import { MemoryGame } from "../components/SceneSwitcher/components/MemoryGame/Me
 import { CommercialQuest } from "../components/SceneSwitcher/components/CommercialQuest/CommercialQuest.jsx";
 import { QuizQuestionsGrid } from "../components/SceneSwitcher/components/QuizQuestionsGrid/QuizQuestionsGrid.jsx";
 import { Puzzle15 } from "../components/SceneSwitcher/components/Puzzle-15/Puzzle-15.jsx";
+import { RockPaperScissors } from "../components/SceneSwitcher/components/RockPaperScissors/RockPaperScissors.jsx";
+import { Leaderboard } from "../components/SceneSwitcher/components/Leaderboard/Leaderboard.jsx";
+import { SnakeQuest } from "../components/SceneSwitcher/components/SnakeQuest/SnakeQuest.jsx";
 
 export const sceneComponents = {
   start: StartScene,
@@ -24,4 +27,7 @@ export const sceneComponents = {
   commercialQuest: CommercialQuest,
   quizQuestionsGrid: QuizQuestionsGrid,
   puzzle15: Puzzle15,
+  rockPaperScissors: RockPaperScissors,
+  leaderboard: Leaderboard,
+  snakeQuest: SnakeQuest,
 };

@@ -232,4 +232,83 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
   ],
+  cn_ny_2024_vivo_quest_1: [
+    {
+      question:
+        "Какая камера используется в смартфонах Vivo для уменьшения шума при съемке в условиях низкой освещенности?",
+      answers: [
+        {
+          value: "Super Night Mode",
+          icon: null,
+        },
+        {
+          value: "Bright Night Mode",
+          icon: null,
+        },
+        {
+          value: "Night Vision Mode",
+          icon: null,
+        },
+        {
+          value: "Starlight Mode",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/vivo-quest-1.png",
+      audio: null,
+      correctAnswer: "Super Night Mode",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question: "Когда компания Vivo начала продавать смартфоны в Казахстане?",
+      answers: [
+        {
+          value: "сентябрь 2019 года",
+          icon: null,
+        },
+        {
+          value: "июнь 2017 года",
+          icon: null,
+        },
+        {
+          value: "январь 2024 года",
+          icon: null,
+        },
+        {
+          value: "июнь 2019 года",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/vivo-quest-2.png",
+      audio: null,
+      correctAnswer: "июнь 2019 года",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question:
+        "Какой смартфон Vivo был первым в мире с поддержкой двух экранов?",
+      answers: [
+        {
+          value: "Vivo NEX Dual Display Edition",
+          icon: null,
+        },
+        {
+          value: "Vivo V17",
+          icon: null,
+        },
+        {
+          value: "Vivo Y12",
+          icon: null,
+        },
+        {
+          value: "Vivo S5",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/vivo-quest-3.png",
+      audio: null,
+      correctAnswer: "Vivo NEX Dual Display Edition",
+      hasAnsweredCorrectly: null,
+    },
+  ],
 };
