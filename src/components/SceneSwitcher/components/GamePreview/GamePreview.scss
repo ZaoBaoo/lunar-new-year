@@ -120,7 +120,7 @@
         height: 100%;
         object-position: center;
         object-fit: contain;
-        animation: 13s linear infinite rotate;
+        //animation: 13s linear infinite rotate;
 
         &-shadow {
           position: absolute;
@@ -165,7 +165,7 @@
           object-position: center;
           object-fit: contain;
           transform-origin: center;
-          animation: swing 2s infinite ease-in-out;
+          //animation: swing 2s infinite ease-in-out;
         }
       }
     }
