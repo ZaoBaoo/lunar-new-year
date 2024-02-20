@@ -1,0 +1,25 @@
+#root .leaderboard {
+  &__wrapper {
+    .wrapperQuest__title {
+      display: none;
+    }
+
+    .wrapperQuest__content {
+      padding-top: 15vh;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 169px;
+    margin: 0 auto;
+  }
+
+  &__inner-brands-quests {
+
+  }
+}

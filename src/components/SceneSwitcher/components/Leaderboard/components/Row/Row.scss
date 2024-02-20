@@ -1,0 +1,26 @@
+#root .rowTable {
+
+  &__cell {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  &__status {
+    width: 15px;
+    height: 17.5px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/icon-quest.svg");
+
+    &_active {
+      background-image: url("https://www.technodom.kz/under/lunar-new-year/icon-quest-complete.svg");
+    }
+  }
+}

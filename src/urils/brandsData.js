@@ -197,7 +197,7 @@ export const brandsData = {
     ],
   },
   vivo: {
-    startDate: "February 19, 2024 20:00:00",
+    startDate: "February 19, 2024 10:00:00",
     slug: "vivo",
     imageBg: "https://www.technodom.kz/under/lunar-new-year/vivo-bg.png",
   },

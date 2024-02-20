@@ -3,12 +3,16 @@ import { ButtonClose } from "../ButtonClose/ButtonClose.jsx";
 import { setActiveSceneAction } from "../../store/reducers/scene.js";
 import { useDispatch } from "react-redux";
 import { Button } from "../Button/Button.jsx";
+import { clsx } from "clsx";
 
 const WrapperQuest = ({
   children,
   indexQuest,
+  buttonText = "Далее",
   isButtonDisabled,
   handleAction = Function.prototype,
+  bg = "",
+  className,
 }) => {
   const dispatch = useDispatch();
 
@@ -19,8 +23,8 @@ const WrapperQuest = ({
   };
 
   return (
-    <div className="wrapperQuest">
-      <div className="wrapperQuest__block">
+    <div className={clsx("wrapperQuest", className)}>
+      <div className={`wrapperQuest__block wrapperQuest__block_${bg}`}>
         <h2 className="wrapperQuest__title">{indexQuest} уровень</h2>
         <ButtonClose onClick={handleClose} />
         <div className="wrapperQuest__content">
@@ -29,7 +33,7 @@ const WrapperQuest = ({
             onClick={handleAction}
             disabled={isButtonDisabled}
             size="small"
-            text="Далее"
+            text={buttonText}
             className="wrapperQuest__button-next"
           />
         </div>

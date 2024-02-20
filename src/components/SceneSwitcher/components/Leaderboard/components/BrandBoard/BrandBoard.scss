@@ -1,0 +1,43 @@
+#root .brandBoard {
+  padding: 20px 4px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #FC5E39, #FC5E39),
+  linear-gradient(180deg, #FC834D 0%, rgba(252, 131, 77, 0) 100%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  border: 1px solid #FFFFFF66;
+  min-height: 230px;
+
+  &__logo {
+    width: 111px;
+    height: 22px;
+    margin: 0 auto;
+
+    &_lg {
+      height: 30px;
+    }
+
+    &_hotpoint {
+      width: 120px;
+      height: 30px;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    color: #FFFFFF;
+    margin-top: 8px;
+  }
+
+  &__item-header {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 15px;
+
+    &:first-child {
+      text-align: left;
+      width: 45%;
+    }
+  }
+}

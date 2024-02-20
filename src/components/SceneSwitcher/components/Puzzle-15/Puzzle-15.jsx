@@ -47,28 +47,28 @@ const Puzzle15 = () => {
             <tr>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`1`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`2`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`3`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`4`}
                 ></div>
@@ -77,28 +77,28 @@ const Puzzle15 = () => {
             <tr>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`5`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`6`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`7`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`8`}
                 ></div>
@@ -107,28 +107,28 @@ const Puzzle15 = () => {
             <tr>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`9`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`10`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`11`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`12`}
                 ></div>
@@ -137,21 +137,21 @@ const Puzzle15 = () => {
             <tr>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`13`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`14`}
                 ></div>
               </td>
               <td>
                 <div
-                  className="puzzle__tile puzzle__tile_neo"
+                  className="puzzle__tile"
                   unselectable="on"
                   data-number-puzzle={`15`}
                 ></div>

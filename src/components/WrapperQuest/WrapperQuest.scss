@@ -20,9 +20,14 @@
 
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
       display: none;
+    }
+
+    &_leaderboard {
+      background-image: url("https://www.technodom.kz/under/lunar-new-year/leaderboard-bg.png");
     }
   }
 

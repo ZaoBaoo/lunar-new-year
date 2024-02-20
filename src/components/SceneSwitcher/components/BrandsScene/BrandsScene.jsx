@@ -13,6 +13,23 @@ const BrandsScene = () => {
   const dispatch = useDispatch();
   const refAnimateScene = useRef();
 
+  const handleLeaderboardScene = () => {
+    if (!checkAuth()) {
+      if (window.signInHelper) {
+        window.signInHelper();
+        return;
+      } else {
+        return;
+      }
+    }
+
+    setTimeout(() => {
+      dispatch(
+        setActiveSceneAction({ type: "leaderboard", activeBrand: null })
+      );
+    }, 500);
+  };
+
   const handleNextScene = (type) => {
     const brandStartDate = Date.parse(brandsData[type].startDate);
     const currentTime = new Date().getTime();
@@ -46,7 +63,7 @@ const BrandsScene = () => {
   };
 
   useLayoutEffect(() => {
-      refAnimateScene.current?.classList.add("scene-animate");
+    refAnimateScene.current?.classList.add("scene-animate");
   }, []);
 
   useEffect(() => {}, []);
@@ -152,11 +169,16 @@ const BrandsScene = () => {
             handleNextScene={handleNextScene}
             isActive
           />
-          <ButtonBrand type="vivo" handleNextScene={handleNextScene} />
+          <ButtonBrand type="vivo" handleNextScene={handleNextScene} isActive />
           <ButtonBrand type="hotpoint" handleNextScene={handleNextScene} />
           <ButtonBrand type="lg" handleNextScene={handleNextScene} />
         </div>
-        <button className="brandsScene__leaderboard">Турнирная таблица</button>
+        <button
+          className="brandsScene__leaderboard"
+          onClick={handleLeaderboardScene}
+        >
+          Турнирная таблица
+        </button>
       </div>
     </div>
   );

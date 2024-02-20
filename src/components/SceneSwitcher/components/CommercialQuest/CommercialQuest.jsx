@@ -21,8 +21,10 @@ const CommercialQuest = ({ activeBrand }) => {
   };
 
   useEffect(() => {
-    console.log(brands["neo"]);
-  }, []);
+    if (activeQuest) {
+      console.log(activeQuest);
+    }
+  }, [activeQuest]);
 
   return (
     <div className="commercialQuest">

@@ -1,0 +1,233 @@
+#root .knb {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__question {
+    padding: 16px 24px;
+    text-align: center;
+    margin: 16px auto;
+
+    width: 100%;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 17px rgba(0, 0, 0, 0.03);
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/lunar-table-78.png");
+    aspect-ratio: 3.78 / 1;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+
+    max-width: 248px;
+    text-align: center;
+    margin: 0 auto 0;
+    color: #FC6B3F;
+  }
+
+  .intro h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .score {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .score h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+
+  .winner {
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 10px;
+  }
+
+  .shakePlayer{
+    animation:shakePlayer 0.4s infinite;
+  }
+  .shakeComputer{
+    animation:shakeComputer 0.4s infinite;
+  }
+
+  @media screen and (max-width:725px) {
+
+  }
+
+  .match {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 16px;
+  }
+
+  .match h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .match .hands {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player-hand {
+    position: relative;
+    left: -35px;
+  }
+
+  .computer-hand {
+    position: relative;
+    right: -70px;
+  }
+
+  .options {
+    min-height: 130px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .options button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .options button label{
+    font-size: 18px;
+    margin-top: 0px;
+    opacity: 0;
+    display: none;
+  }
+
+  .options button:hover > label{
+    display: none;
+  }
+
+  .options button img{
+    height: 50px;
+  }
+
+  .options .paper img{
+    width: 50px;
+    height: auto;
+  }
+
+  .options .rock img{
+    margin-top: 10px;
+  }
+
+  .options .scissor img{
+    margin-top: 10px;
+  }
+
+  .result {
+    position: absolute;
+    left: calc(50% - 248px / 2);
+
+    width: 248px;
+
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 810px) {
+
+    .player-hand, .computer-hand {
+      width: 215px;
+    }
+    h2.result{
+      font-size: 1.3rem;
+    }
+    h2.winner{
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .hands{
+      gap: 1rem;
+      //margin-top: 37px;
+    }
+
+    .computer-hand{
+      width: 185px;
+      height: 113px;
+    }
+
+    .player-hand {
+      width: 140px;
+      height: 115px;
+    }
+
+    h2.result{
+      font-size: 1.2rem;
+    }
+
+    h2.winner{
+      margin: 0;
+      margin-bottom: 10px;
+      margin-top: auto;
+
+      font-size: 14px;
+    }
+  }
+
+  .avatar {
+    display: block;
+    width: 106px;
+    aspect-ratio: 1 / 1;
+  }
+
+  @keyframes shakePlayer {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(10px) }
+    50% { transform: translateY(-10px) }
+    75% { transform: translateY(10px) }
+    100% { transform: translateY(0) }
+  }
+
+  @keyframes shakeComputer {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(10px) }
+    50% { transform: translateY(-10px) }
+    75% { transform: translateY(10px) }
+    100% { transform: translateY(0) }
+  }
+}
