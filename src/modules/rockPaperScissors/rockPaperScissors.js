@@ -4,9 +4,9 @@ export const rockPaperScissors = (handelButtonActive) => {
     you: 0,
     computer: 0,
   };
-  const WIN_GREEN = "#FFC107";
-  const LOSE_RED = "#FFC107";
-  const DRAW_BLUE = "#FFC107";
+  const WIN_GREEN = "#ffffff";
+  const LOSE_RED = "#ffffff";
+  const DRAW_BLUE = "#ffffff";
 
   const rockUser = "https://www.technodom.kz/under/knb-moonyear/rock-user.svg";
   const paperUser =

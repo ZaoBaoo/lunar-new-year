@@ -311,4 +311,83 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
   ],
+  cn_ny_2024_lg_quest_1: [
+    {
+      question: "Как называлась компания LG на момент основания? ",
+      answers: [
+        {
+          value: "SilverTech",
+          icon: null,
+        },
+        {
+          value: "GoldStar",
+          icon: null,
+        },
+        {
+          value: "DiamondElectronics",
+          icon: null,
+        },
+        {
+          value: "BronzeTech",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/lg-quest-1.png",
+      audio: null,
+      correctAnswer: "GoldStar",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question:
+        "Какая технология используется в саундбарах LG для создания объёмного звука?",
+      answers: [
+        {
+          value: "Dolby Atmos",
+          icon: null,
+        },
+        {
+          value: "DTS:X",
+          icon: null,
+        },
+        {
+          value: "Dolby Digital",
+          icon: null,
+        },
+        {
+          value: "THX",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/lg-quest-2.png",
+      audio: null,
+      correctAnswer: "Dolby Atmos",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question:
+        "Как называется пульт дистанционного управления в телевизорах LG, который был разработан совместно с Google?",
+      answers: [
+        {
+          value: "Magic Remote",
+          icon: null,
+        },
+        {
+          value: "LG SmartWand",
+          icon: null,
+        },
+        {
+          value: "Voice Wizard",
+          icon: null,
+        },
+        {
+          value: "RemoteSpeak",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/lg-quest-3.png",
+      audio: null,
+      correctAnswer: "Voice Wizard",
+      hasAnsweredCorrectly: null,
+    },
+  ],
 };

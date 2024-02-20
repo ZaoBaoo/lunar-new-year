@@ -156,4 +156,83 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
   ],
+  cn_ny_2024_lg_quest_3: [
+    {
+      question:
+        "Технология в телевизорах LG для  более глубоких чёрных оттенков и более ярких цветов",
+      answers: [
+        {
+          value: "QLED",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-1.png",
+        },
+        {
+          value: "OLED",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-2.png",
+        },
+        {
+          value: "LED",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-3.png",
+        },
+        {
+          value: "Mini LED",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-4.png",
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/ava-quest-1.png",
+      audio: null,
+      correctAnswer: "OLED",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question: "Выбери наушники от компании LG",
+      answers: [
+        {
+          value: "1 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-5.png",
+        },
+        {
+          value: "2 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-6.png",
+        },
+        {
+          value: "3 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-7.png",
+        },
+        {
+          value: "4 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-8.png",
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/ava-quest-1.png",
+      audio: null,
+      correctAnswer: "1 вариант",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question:
+        "Какой телевизор LG был первым в мире с раскрывающимся экраном, представленным на CES 2020?",
+      answers: [
+        {
+          value: "1 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-9.png",
+        },
+        {
+          value: "2 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-10.png",
+        },
+        {
+          value: "3 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-11.png",
+        },
+        {
+          value: "4 вариант",
+          icon: "https://www.technodom.kz/under/lunar-new-year/lg-grid-12.png",
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/ava-quest-1.png",
+      audio: null,
+      correctAnswer: "3 вариант",
+      hasAnsweredCorrectly: null,
+    },
+  ],
 };
