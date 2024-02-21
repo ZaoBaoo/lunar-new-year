@@ -1,0 +1,19 @@
+#root .progressBar {
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+
+  &__item {
+    width: 18px;
+    height: 21px;
+    background-image: url("https://www.technodom.kz/under/lunar-new-year/icon-quest.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    &_active {
+      background-image: url("https://www.technodom.kz/under/lunar-new-year/icon-quest-complete.svg");
+    }
+  }
+}
