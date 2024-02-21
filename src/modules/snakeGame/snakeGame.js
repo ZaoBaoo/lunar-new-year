@@ -176,5 +176,5 @@ export const playAGame = (gameWin, gameLoss) => {
     }
   }
 
-  let game = setInterval(drawGame, 150);
+  let game = setInterval(drawGame, 200);
 };
