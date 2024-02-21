@@ -325,8 +325,72 @@ export const brandsData = {
     ],
   },
   hotpoint: {
-    startDate: "February 21, 2024 21:00:00",
+    startDate: "February 21, 2024 10:00:00",
     slug: "hotpoint",
     imageBg: "https://www.technodom.kz/under/lunar-new-year/hotpoint-bg.png",
+    linkProducts: "https://www.technodom.kz/cms/promo/hotpoint-moonyear",
+    image: "https://www.technodom.kz/under/lunar-new-year/hotpoint-prize-5.png",
+    quests: [
+      {
+        id: 1,
+        event: "cn_ny_2024_hotpoint_quest_1",
+        endContent: {
+          title: "Ты всё ближе к цели! 1-й уровень позади!",
+          text: "Ты участвуешь в розыгрыше 20 сертификатов номиналом 50 000 тенге",
+        },
+        complete: false,
+        image:
+          "https://www.technodom.kz/under/lunar-new-year/hotpoint-prize-1.png",
+        nameQuest: "quizQuestions",
+      },
+      {
+        id: 2,
+        event: "cn_ny_2024_hotpoint_quest_2",
+        endContent: {
+          title: "2-й уровень пройден!",
+          text: "Ты участвуешь в розыгрыше 10 сертификатов номиналом 100 000 тенге",
+        },
+        complete: false,
+        image:
+          "https://www.technodom.kz/under/lunar-new-year/hotpoint-prize-2.png",
+        nameQuest: "memoryGame",
+      },
+      {
+        id: 3,
+        event: "cn_ny_2024_hotpoint_quest_3",
+        endContent: {
+          title: "3-й уровень пройден!",
+          text: "Ты участвуешь в розыгрыше 7 сертификатов номиналом 150 000 тенге",
+        },
+        complete: false,
+        image:
+          "https://www.technodom.kz/under/lunar-new-year/hotpoint-prize-3.png",
+        nameQuest: "quizSound",
+      },
+      {
+        id: 4,
+        event: "cn_ny_2024_hotpoint_quest_4",
+        endContent: {
+          title: "4-й уровень пройден! Ты всё ближе к цели!",
+          text: "Ты участвуешь в розыгрыше 5 сертификатов номиналом 200 000 тенге",
+        },
+        complete: false,
+        image:
+          "https://www.technodom.kz/under/lunar-new-year/hotpoint-prize-4.png",
+        nameQuest: "snakeQuest",
+      },
+      {
+        id: 5,
+        event: "cn_ny_2024_hotpoint_quest_5",
+        endContent: {
+          title: "Покупай технику",
+          text: "от 20 000 тенге с 12.02.24 по 24.02.24 включительно и участвуй в розыгрыше  3 сертификатов на покупки бренда Hotpoint на 350 000 тенге.",
+        },
+        complete: false,
+        image:
+          "https://www.technodom.kz/under/lunar-new-year/hotpoint-prize-5.png",
+        nameQuest: "commercialQuest",
+      },
+    ],
   },
 };

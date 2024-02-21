@@ -55,7 +55,7 @@ const Leaderboard = () => {
           >
             {leaderboardData &&
               Object.keys(leaderboardData).map((key) => (
-                <SwiperSlide>
+                <SwiperSlide key={key}>
                   <BrandBoard
                     boardData={leaderboardData[key]}
                     brandName={key}

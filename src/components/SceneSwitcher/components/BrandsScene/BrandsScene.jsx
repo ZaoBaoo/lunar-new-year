@@ -173,7 +173,11 @@ const BrandsScene = () => {
           />
           <ButtonBrand type="vivo" handleNextScene={handleNextScene} isActive />
           <ButtonBrand type="lg" handleNextScene={handleNextScene} isActive />
-          <ButtonBrand type="hotpoint" handleNextScene={handleNextScene} />
+          <ButtonBrand
+            type="hotpoint"
+            handleNextScene={handleNextScene}
+            isActive
+          />
         </div>
         <button
           className="brandsScene__leaderboard"

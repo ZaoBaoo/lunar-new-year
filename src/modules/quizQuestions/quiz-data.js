@@ -390,4 +390,82 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
   ],
+  cn_ny_2024_hotpoint_quest_1: [
+    {
+      question:
+        "В честь какого инновационного товара была названа компания Hotpoint?",
+      answers: [
+        {
+          value: "Электрический чайник",
+          icon: null,
+        },
+        {
+          value: "Электрический утюг",
+          icon: null,
+        },
+        {
+          value: "Электроплита",
+          icon: null,
+        },
+        {
+          value: "Микроволновка",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/hotpoint-quest-1.png",
+      audio: null,
+      correctAnswer: "Электрический утюг",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question: "Какая бытовая техника НЕ изготавливается компанией Hotpoint?",
+      answers: [
+        {
+          value: "Холодильники и стиральные машины",
+          icon: null,
+        },
+        {
+          value: "Пылесосы",
+          icon: null,
+        },
+        {
+          value: "Кофеварки",
+          icon: null,
+        },
+        {
+          value: "Плиты",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/hotpoint-quest-2.png",
+      audio: null,
+      correctAnswer: "Кофеварки",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question: "В каком году была выпущена первая стиральная машина Hotpoint?",
+      answers: [
+        {
+          value: "1925",
+          icon: null,
+        },
+        {
+          value: "1926",
+          icon: null,
+        },
+        {
+          value: "1962",
+          icon: null,
+        },
+        {
+          value: "1975",
+          icon: null,
+        },
+      ],
+      img: "https://www.technodom.kz/under/lunar-new-year/hotpoint-quest-3.png",
+      audio: null,
+      correctAnswer: "1925",
+      hasAnsweredCorrectly: null,
+    },
+  ],
 };

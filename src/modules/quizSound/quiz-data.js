@@ -159,4 +159,84 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
   ],
+  cn_ny_2024_hotpoint_quest_3: [
+    {
+      question: "Какой из перечисленных приборов производит этот звук?",
+      answers: [
+        {
+          value: "Стиральная машина",
+          icon: null,
+        },
+        {
+          value: "Холодильник",
+          icon: null,
+        },
+        {
+          value: "Микроволновая печь",
+          icon: null,
+        },
+        {
+          value: "Пылесос",
+          icon: null,
+        },
+      ],
+      img: null,
+      audio:
+        "https://www.technodom.kz/under/lunar-new-year/sounds/sound-hotpoint-1.mp3",
+      correctAnswer: "Холодильник",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question: "Когда стиральная машина издаёт такой звук?",
+      answers: [
+        {
+          value: "При отжиме белья",
+          icon: null,
+        },
+        {
+          value: "При загрузке белья",
+          icon: null,
+        },
+        {
+          value: "При полоскании",
+          icon: null,
+        },
+        {
+          value: "При основной стирке",
+          icon: null,
+        },
+      ],
+      img: null,
+      audio:
+        "https://www.technodom.kz/under/lunar-new-year/sounds/sound-hotpoint-2.mp3",
+      correctAnswer: "При отжиме белья",
+      hasAnsweredCorrectly: null,
+    },
+    {
+      question: "Какой прибор для ухода издаёт этот звук?",
+      answers: [
+        {
+          value: "При отжиме белья",
+          icon: null,
+        },
+        {
+          value: "При загрузке белья",
+          icon: null,
+        },
+        {
+          value: "При полоскании",
+          icon: null,
+        },
+        {
+          value: "При наборе воды",
+          icon: null,
+        },
+      ],
+      img: null,
+      audio:
+        "https://www.technodom.kz/under/lunar-new-year/sounds/sound-hotpoint-3.mp3",
+      correctAnswer: "При наборе воды",
+      hasAnsweredCorrectly: null,
+    },
+  ],
 };

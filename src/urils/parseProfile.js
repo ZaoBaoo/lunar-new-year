@@ -46,6 +46,15 @@ export const parseProfile = (profileData) => {
     };
   });
 
+  const transformDateHotpoint = brandsData.hotpoint.quests.map((quest) => {
+    const isCompleted = profileData?.custom_properties[quest.event];
+
+    return {
+      ...quest,
+      complete: isCompleted ? true : false,
+    };
+  });
+
   return {
     ...brandsData,
     ava: { ...brandsData.ava, quests: transformDateAva },
@@ -53,5 +62,6 @@ export const parseProfile = (profileData) => {
     philips: { ...brandsData.philips, quests: transformDatePhilips },
     vivo: { ...brandsData.vivo, quests: transformDateVivo },
     lg: { ...brandsData.lg, quests: transformDateLg },
+    hotpoint: { ...brandsData.hotpoint, quests: transformDateHotpoint },
   };
 };

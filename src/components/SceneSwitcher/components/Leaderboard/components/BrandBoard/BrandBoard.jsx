@@ -1,11 +1,7 @@
 import "./BrandBoard.scss";
 import { Row } from "../Row/Row.jsx";
-import { useEffect } from "react";
 
 const BrandBoard = ({ boardData, brandName }) => {
-  useEffect(() => {
-    console.log(boardData);
-  }, [boardData]);
   return (
     <div className="brandBoard">
       <img

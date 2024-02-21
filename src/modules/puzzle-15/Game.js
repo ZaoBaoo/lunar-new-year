@@ -62,7 +62,6 @@ const getUniqRandom = function getUniqRandom(max) {
 
 class Game {
   constructor(table, brandType) {
-    console.log(brandType);
     this.brandType = brandType;
     _cb.set(this, null);
     this.board = new Board(table);
@@ -86,12 +85,9 @@ class Game {
 
     for (let i = 0; i < 15; i += 1) {
       const pos = posgen.next();
-      // console.log(pos);
 
-      console.log(this.brandType);
       const tile = new Tile(orders[i], pos, this.brandType);
       tile.on("trymove", this[_tileMoveHandle].bind(this));
-      // console.log(tile);
 
       this.fields.push(tile);
     }
