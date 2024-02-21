@@ -213,7 +213,7 @@ export const quizData = {
       hasAnsweredCorrectly: null,
     },
     {
-      question: "Какой прибор для ухода издаёт этот звук?",
+      question: "Когда стиральная машина издаёт такой звук?",
       answers: [
         {
           value: "При отжиме белья",

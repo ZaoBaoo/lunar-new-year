@@ -6,6 +6,21 @@
   align-items: flex-end;
   justify-content: center;
 
+  &__wrapper-loader {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__loader {
+    //margin-top: -10%;
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+  }
+
   &__content {
     position: relative;
     z-index: 2;
