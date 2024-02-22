@@ -3,6 +3,7 @@
   height: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -10,4 +11,17 @@
   text-align: center;
 
   background-color: black;
+
+  &__link {
+    display: block;
+    margin-top: 32px;
+  }
+
+  &__img {
+
+  }
+
+  &__button {
+    margin-top: 32px;
+  }
 }
