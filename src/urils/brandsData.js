@@ -325,7 +325,7 @@ export const brandsData = {
     ],
   },
   hotpoint: {
-    startDate: "June 3, 2025 10:00:00",
+    startDate: "June 29, 2026 10:00:00",
     slug: "hotpoint",
     imageBg: "https://www.technodom.kz/under/lunar-new-year/hotpoint-bg.png",
     linkProducts: "https://www.technodom.kz/cms/promo/hotpoint-moonyear",
