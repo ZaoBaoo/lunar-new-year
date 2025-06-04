@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  activeScene: "brands",
+  activeScene: "start",
   brands: {},
   activeBrand: "",
   activeQuest: "",

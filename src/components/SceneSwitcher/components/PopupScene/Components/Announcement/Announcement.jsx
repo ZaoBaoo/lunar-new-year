@@ -21,10 +21,9 @@ const Announcement = ({ handleCloseScene }) => {
         <>
           <div className="announcement__content">
             <p className="announcement__text">
-              Игра закончилась
-              {/*{`Уровень будет доступен ${*/}
-              {/*  parseDate(currentBrandData.startDate).day*/}
-              {/*} февраля`}*/}
+              {`Уровень будет доступен ${
+                parseDate(currentBrandData.startDate).day
+              } февраля`}
             </p>
             <div className="announcement__image announcement__image_xm" />
             <Button

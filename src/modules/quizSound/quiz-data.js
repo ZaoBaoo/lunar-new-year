@@ -22,7 +22,7 @@ export const quizData = {
       ],
       img: null,
       audio:
-        "https://www.technodom.kz/under/lunar-new-year/sounds/lunar-fen.mp3",
+        "./zvuk-fena00000044.mp3",
       correctAnswer: "Фен",
       hasAnsweredCorrectly: null,
     },
